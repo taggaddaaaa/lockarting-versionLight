@@ -1,11 +1,18 @@
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-36008660-2', 'auto');
-    ga('send', 'pageview');
+  ga('create', 'UA-36008660-2', 'auto');
+  ga('send', 'pageview');
 </script>
 
 <!DOCTYPE html>
@@ -129,12 +136,19 @@
 
     <!-- SmartLook -->
     <script type="text/javascript">
-        window.smartlook||(function(d) {
-            let o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-            let c=d.createElement('script');o.api=[];c.async=true;c.type='text/javascript';
-            c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
-        })(document);
-        smartlook('init', 'e80d010c7b4448c636f5803439b5b75a54252dc2');
+      window.smartlook || (function (d) {
+        let o = smartlook = function () {
+          o.api.push(arguments)
+        }, h = d.getElementsByTagName('head')[0];
+        let c = d.createElement('script');
+        o.api = [];
+        c.async = true;
+        c.type = 'text/javascript';
+        c.charset = 'utf-8';
+        c.src = 'https://rec.smartlook.com/recorder.js';
+        h.appendChild(c);
+      })(document);
+      smartlook('init', 'e80d010c7b4448c636f5803439b5b75a54252dc2');
     </script>
 
     <!-- ManyChat -->
@@ -543,182 +557,67 @@
 <!-- Infos pratiques HORAIRES -->
 <div class="infos-modal modal fade" id="infosModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
 
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <!-- CODE HORAIRES D'ETE
-                        <h2>Horaires d'été</h2>
-                        <p class="item-intro text-muted">Est-ce que votre circuit préféré est ouvert?</p>
-
-                        <img class="img-responsive img-centered" src="img/ete.jpg" alt="">
-
-                        <p>Le circuit est ouvert <strong>TOUS LES JOURS</strong> de <strong>10h à 01h00</strong>
-                        du matin. Nous sommes fermés en cas de météo ne permettant pas la pratique sur circuit.</p>
-                        <p>Il pleut des cordes? Vous voulez être <strong>certain</strong> de ne pas vous déplacer
-                        pour rien? </p>
-                        <p>Vous avez raison! <strong>Appelez-nous!</strong>
-                            <i class="fa fa-phone">
-                                <a href="tel:0467170342" title="0467170342">04.67.17.03.42</a>
-                            </i>
-                        </p>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">
-                            <i class="fa fa-times"></i> Retour
-                        </button>-->
-
-                        <!-- CODE HORAIRES VACANCES
-                        <h2>Horaires de vacances scolaires</h2>
-
-                        <p class="text-danger"> ATTENTION : S'agissant d'horaires de "vacances",
-                        nous vous conseillons de téléphoner au
-                        <a href="tel:0467170342" title="0467170342">04.67.17.03.42</a> pour être bien sûr de
-                        l'ouverture du circuit.
-                        </p>
-                        <br>
-                        <p class="item-intro text-muted">Est-ce que votre circuit préféré est ouvert?</p>
-
-                         //  image pour l'été
-                         <img class="img-responsive img-centered" src="img/ete.jpg" alt="">
-                         // image pour l'hiver
-                         <img class="img-responsive img-centered" style="width: 20%" src="img/horloge.jpg" alt="">
-
-                         <p>Le circuit est ouvert <strong>TOUS LES JOURS</strong> de <strong>10h à 19h</strong>.
-                         Nous sommes fermés en cas de météo ne permettant pas la pratique sur circuit.</p>
-                         <p>Il pleut des cordes? Vous voulez être <strong>certain</strong> de ne pas vous déplacer
-                         pour rien?</p>
-                         <p>Vous avez raison! <strong>Appelez-nous!</strong>
-                            <i class="fa fa-phone">
-                                <a href="tel:0467170342" title="0467170342">04.67.17.03.42</a>
-                            </i>
-                        </p>
-
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">
-                            <i class="fa fa-times"></i> Retour
-                        </button>
-                        -->
-
-                        <!-- CODE HORAIRES MI-SAISON
-                        <h2>Horaires de la rentrée</h2>
-                        <p class="text-danger"> ATTENTION : S'agissant d'horaires de "mi-saison", nous vous
-                        conseillons de téléphoner au <a href="tel:0467170342" title="0467170342">04.67.17.03.42</a>
-                         pour être bien sûr de l'ouverture du circuit.</p>
-                        <br>
-                        <p class="item-intro text-muted">Est-ce que votre circuit préféré est ouvert?</p>
-
-                        // image pour l'été
-                        <img class="img-responsive img-centered" src="img/ete.jpg" alt="">
-                        //  image pour l'hiver
-                        <img class="img-responsive img-centered" style="width: 20%" src="img/horloge.jpg" alt="">
-
-
-                        <p>Le circuit est ouvert<strong> DU MERCREDI AU DIMANCHE.</strong></p>
-                        <p>Retrouvez-nous <strong>de 14h à 19h00 du mercredi au vendredi inclus et de 10h à 19h
-                        le samedi et le dimanche.</strong></p>
-                        <p>Nous sommes fermés le lundi et le mardi et également en cas de météo ne permettant pas
-                        la pratique sur circuit.</p>
-                        <p>Il pleut des cordes? Vous voulez être <strong>certain</strong> de ne pas vous déplacer
-                        pour rien? </p>
-                        <p>Vous avez raison! <strong>Appelez-nous!</strong>
-                            <i class="fa fa-phone">
-                                <a href="tel:0467170342" title="0467170342">04.67.17.03.42</a>
-                            </i>
-                        </p>
-
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">
-                            <i class="fa fa-times"></i> Retour
-                        </button>
-                        -->
-
-
-                        <!-- CODE HORAIRES D'HIVER
-
-                        <h2>Horaires d'hiver</h2>
-                        <p class="item-intro text-muted">Est-ce que votre circuit préféré est ouvert?</p>
-
-                        <img class="img-responsive img-centered" style="width: 20%" src="img/horloge.jpg" alt="">
-
-                        <p>Le circuit est ouvert <strong>du MERCREDI au DIMANCHE de 14h00 à 19h00.</strong></p>
-                        <p>Pendant les <strong> vacances scolaires et les jours fériés</strong>, nous sommes ouverts
-                            <strong> tous les jours de 10h00 à 19h00</strong>.
-                        </p>
-                        <p>Nous sommes fermés au mois de janvier pour nos congés annuels.</p>
-                        <p>Nous sommes fermés en cas de météo ne permettant pas la pratique sur circuit.</p>
-                        <p><strong>En dehors de ces horaires, il est possible d'organiser des challenges de
-                            jour ou en nocturne sur réservation : Appelez-nous!</strong></p>
-                        <p><strong>Vous êtes perdu? Il pleut des cordes? Vous voulez être certain de ne pas vous
-                            déplacer pour rien?</strong></p>
-                        <p>Vous avez raison! Appelez-nous!
-                            <i class="fa fa-phone">
-                                <a href="tel:0467170342" title="0467170342">04.67.17.03.42</a>
-                            </i>
-                        </p>
-
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">
-                            <i class="fa fa-times"></i>Retour
-                        </button>
-
-                        -->
-
-                        <!--CODE HORAIRE JUILLET et AOUT
-                        <h2>Horaires mois de Juillet et AOÛT</h2>
-                        <p class="item-intro text-muted">Est-ce que votre circuit préféré est ouvert?</p>
-
-                        <img class="img-responsive img-centered" style="width: 20%" src="img/horloge.jpg" alt="">
-
-                        <p>Le circuit est ouvert <strong>TOUS LES JOURS de 10h00 à 23h00 et jusqu'à 01h00 du matin suivant l'afluence et les réservations.</strong> </p>
-                        <p>Pendant les <strong> vacances scolaires et les jours fériés</strong>, nous sommes ouverts
-                            <strong> TOUS LES JOURS de 10h00 à 19h00</strong>.
-                        </p>
-                        <p>Nous sommes fermés en cas de météo ne permettant pas la pratique sur circuit.</p>
-                        <p><strong>Vous êtes perdu? Il pleut des cordes? Vous voulez être certain de ne pas vous
-                            déplacer pour rien?</strong></p>
-                        <p>Vous avez raison! Appelez-nous!
-                            <i class="fa fa-phone">
-                                <a href="tel:0467170342" title="0467170342">04.67.17.03.42</a>
-                            </i>
-                        </p>
-
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">
-                            <i class="fa fa-times"></i>Retour
-                        </button>
-
-                        -->
-
-
 
                         <!--CODE HORAIRE Nouveaux horaires en vacances et periodes scolaires -->
-                        <h2>Horaires HORS Vacances Scolaires</h2>
-                        <!--<p class="item-intro text-muted">Est-ce que votre circuit préféré est ouvert?</p>-->
-                        <img class="img-responsive img-centered" style="width: 20%;" src="img/ecole1.jpg" alt="hors vacances scolaires">
+                        <!--<h2>Horaires HORS Vacances Scolaires</h2>-->
+                        <!--&lt;!&ndash;<p class="item-intro text-muted">Est-ce que votre circuit préféré est ouvert?</p>&ndash;&gt;-->
+                        <!--<img class="img-responsive img-centered" style="width: 20%;" src="img/ecole1.jpg"-->
+                        <!--alt="hors vacances scolaires">-->
 
-                        <p>Le circuit est ouvert<strong> DU MERCREDI AU DIMANCHE.</strong></p>
-                        <p>Mercredi, Jeudi et Vendredi: <strong>de 14h à 19h30.</strong></p>
-                        <p>Samedi: <strong>de 10h00 à 20h30</strong></p>
-                        <p>Dimanche: <strong>de 10h00 à 19h30</strong></p>
-                        <p>
-                            <strong>Nous sommes fermés le Lundi et le Mardi et également en cas de météo ne permettant pas
-                            la pratique sur circuit.
-                            </strong>
-                        </p>
+                        <!--<p>Le circuit est ouvert<strong> DU MERCREDI AU DIMANCHE.</strong></p>-->
+                        <!--<p>Mercredi, Jeudi et Vendredi: <strong>de 14h à 19h30.</strong></p>-->
+                        <!--<p>Samedi: <strong>de 10h00 à 20h30</strong></p>-->
+                        <!--<p>Dimanche: <strong>de 10h00 à 19h30</strong></p>-->
+                        <!--<p>-->
+                        <!--<strong>Nous sommes fermés le Lundi et le Mardi et également en cas de météo ne permettant-->
+                        <!--pas-->
+                        <!--la pratique sur circuit.-->
+                        <!--</strong>-->
+                        <!--</p>-->
+
+                        <!--<br>-->
+
+
+                        <!--<h2>Horaires Vacances Scolaires et Jours Fériés</h2>-->
+                        <!--<img class="img-responsive img-centered" style="width: 20%;" src="img/vacances1.jpg"-->
+                        <!--alt="vacances scolaires">-->
+                        <!--<p>Le circuit est ouvert <strong>TOUS LES JOURS de 10h00 à 19h00.</strong></p>-->
+
+                        <!--<br>-->
+
+                        <h2>Horaires Novembre et Décembre 2018</h2>
+                        <p class="item-intro text-muted">Est-ce que votre circuit préféré est ouvert?</p>
+                        <img class="img-responsive img-centered" style="width: 20%;" src="img/ecole1.jpg"
+                             alt="hors vacances scolaires">
+                        <p>En novembre, hors vacances de la toussaint, le circuit est ouvert du mercredi au vendredi de
+                            14h00 à 18h00 et le week-end de 10h00 à 18h00..</p>
+                        <p>En décembre, hors vacances de Noël, le circuit est ouvert du mercredi au dimanche de 14h00 à
+                            18h00.</p>
 
                         <br>
 
-
-                        <h2>Horaires Vacances Scolaires et Jours Fériés</h2>
-                        <img class="img-responsive img-centered" style="width: 20%;" src="img/vacances1.jpg" alt="vacances scolaires">
-                        <p>Le circuit est ouvert <strong>TOUS LES JOURS de 10h00 à 19h00.</strong> </p>
-
+                        <img class="img-responsive img-centered" style="width: 20%;" src="img/vacances1.jpg"
+                             alt="vacances scolaires">
+                        <p>Pour les vacances de la toussaint: le circuit est ouvert tous les jours de 10h00 à 18h00.</p>
+                        <p>Pour les vacances de Noël: le circuit est ouvert tous les jours de 14h00 à 18h00.</p>
                         <br>
-
                         <h2>En Image Ca Donne Ca</h2>
                         <img class="img-responsive img-centered"
-                             src="img/horaires-fin-dannee-2018.jpg"
+                             src="img/nouveauxhorairesfindannee2018.jpg"
                              alt="horaires d ouverture du circuit fin 2018"
                         >
                         <p>Pour les plus visuels d'entre nous! &#x1F609;
-                            <a href="img/horaires-fin-dannee-2018.jpg" download="horaires_fin_2018">
+                            <a href="img/nouveauxhorairesfindannee2018.jpg" download="horaires_fin_2018">
                                 <strong style="color: darkred;">Télécharger l'image</strong>
                             </a>
                         </p>
@@ -757,7 +656,11 @@
 <!-- infos pratique modal VENIR -->
 <div class="infos-modal modal fade" id="infosModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
 
         <div class="container">
             <div class="row">
@@ -772,7 +675,8 @@
 
                         <h3>Notre adresse:</h3>
                         <p>
-                            <strong>Loc'karting, Route Departementale 172, Lieu-dit La Pailletrice, 34470 Pérols.</strong>
+                            <strong>Loc'karting, Route Departementale 172, Lieu-dit La Pailletrice, 34470
+                                Pérols.</strong>
                         </p>
 
                         <p>Si vous venez en <strong>voiture</strong>, nous vous conseillons d'utiliser votre GPS,
@@ -816,7 +720,11 @@
 <!-- Infos pratiques Modal Tarifs -->
 <div class="infos-modal modal fade" id="infosModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
 
         <div class="container">
             <div class="row">
@@ -831,11 +739,13 @@
                         <img class="img-responsive img-centered" src="img/cochon.jpg" alt="">
 
                         <div class="row">
-                            <p>Nos séances de location durent <strong>10 minutes</strong> et sont encadrées par un moniteur
+                            <p>Nos séances de location durent <strong>10 minutes</strong> et sont encadrées par un
+                                moniteur
                                 BPJEPS qui vous dispense un briefing sécurité.
                             </p>
                             <p>Loc'karting vous fournit casques, charlottes, et minerves pour les plus jeunes.</p>
-                            <p>Un système de chronométrage informatisé vous permet de visualiser vos performances sur écran plat.</p>
+                            <p>Un système de chronométrage informatisé vous permet de visualiser vos performances sur
+                                écran plat.</p>
                             <p><strong>Mini 160cc: </strong>à partir de 7 ans jusqu'à 13 ans, minimum 1 mètre 30.</p>
                             <p><strong>Elite : </strong>à partir de 14 ans.</p>
                             <p><strong>Bi-place : </strong>permet à un adulte de piloter le karting avec à ses côtés,
@@ -968,7 +878,8 @@
                         </div>
 
                         <div class="row">
-                            <p><strong>Pour la FORMULE ANNIVERSAIRE</strong>: nous prenons les réservations par téléphone
+                            <p><strong>Pour la FORMULE ANNIVERSAIRE</strong>: nous prenons les réservations par
+                                téléphone
                                 ou mail A PARTIR DE 6 PARTICIPANTS minimum. La formule anniversaire comprend bien
                                 sûr du karting! : 2x 10minutes de karting 160CC ainsi qu'un gâteau, des bonbons,
                                 des boissons, la remise des diplômes de pilote de karting pour chaque enfant sur le
@@ -994,7 +905,11 @@
 <!-- Mentions legales -->
 <div class="infos-modal modal fade" id="infosModal4" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
 
         <div class="container">
             <div class="row">
@@ -1019,7 +934,7 @@
                             Nom de la société :<strong> Loc'karting</strong><br/>
                             Adresse : <strong>RD 172, Lieu dit la Pailletrice, 34470 Pérols</strong><br/>
                             Tél  : <strong><a href="tel:0467170342" title="0467170342">04.67.17.03.42</a></strong><br/>
-                            Au capital de :<strong> 5000  &#8364;</strong><br/>
+                            Au capital de :<strong> 5000 &#8364;</strong><br/>
                             SIRET :  <strong>52805443000020   </strong>R.C.S. :<strong> 528054430 RCS
                             Montpellier</strong><br/>
                             Numéro TVA intracommunautaire : <strong>FR42528054430</strong><br/>
@@ -1071,7 +986,8 @@
                             reconnaît accepter les modifications des conditions générales qui seraient intervenues.<br/>
                         </p>
                         <p style="text-align: justify;">
-                            <strong><span style="font-size: medium;">3. Description des services fournis :</span></strong><br/>
+                            <strong><span
+                                    style="font-size: medium;">3. Description des services fournis :</span></strong><br/>
                             <br/>
                             Le site <a href="http://www.lockarting.fr" target="_blank">www.lockarting.fr</a> a pour
                             objet de fournir une information concernant l?ensemble des activités de la société.<br/>
@@ -1138,7 +1054,8 @@
                             des articles L.335-2 et suivants du Code de Propriété Intellectuelle.<br/>
                         </p>
                         <p style="text-align: justify;">
-                            <strong><span style="font-size: medium; ">6. Liens hypertextes et cookies :</span></strong><br/>
+                            <strong><span
+                                    style="font-size: medium; ">6. Liens hypertextes et cookies :</span></strong><br/>
                             <br/>
                             Le site <a href="http://www.lockarting.fr" target="_blank">www.lockarting.fr</a> contient un
                             certain nombre de liens hypertextes vers d?autres sites (partenaires, informations ?) mis en
@@ -1250,9 +1167,9 @@
 
 <!-- Script to Activate the Carousel -->
 <script>
-    $('.carousel').carousel({
-        interval: 3000 //changes the speed
-    })
+  $('.carousel').carousel({
+    interval: 3000 //changes the speed
+  })
 </script>
 
 <!-- Custom Theme JavaScript -->
