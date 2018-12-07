@@ -32,16 +32,18 @@ if(!empty($_POST))
 
     //si $error est vide
 	if(empty($errors)){
+//		Pour l'envoyer au webmaster et à Alan:
+//        $to = "contact@lockarting.fr, sabinecaizergues@hotmail.com, lockarting.accueil@icloud.com";
+        $to = "contact@lockarting.fr";
 
-        $to = "contact@lockarting.fr" . ", ";
-        $to .= "sabinecaizergues@hotmail.com" . ", ";
-        $to .= "lockarting.accueil@icloud.com";
         $subject = "[Formulaire de contact] www.lockarting.fr";
+
         $message = "Bonjour, vous avez un nouveau message depuis votre formulaire de contact de votre site internet : \n\n\n";
         $message .= "Auteur : ".$_POST["name"]."\n";
         $message .= "Email du contact : ".$_POST["email"]."\n";
         $message .= "Tel. du contact : ".$_POST["phone"]."\n\n\n";
         $message .= "Message : \n\n".$_POST["message"];
+
         $headers = "From : ".$_POST["email"]."\r\n" . "Reply-To: ".$_POST["email"]."\r\n" . "X-Mailer: PHP/" . phpversion();
 
         mail($to, $subject, $message, $headers);
