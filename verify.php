@@ -33,8 +33,8 @@ if(!empty($_POST))
     //si $error est vide
 	if(empty($errors)){
 //		Pour l'envoyer au webmaster et à Alan:
-//        $to = "contact@lockarting.fr, sabinecaizergues@hotmail.com, lockarting.accueil@icloud.com";
-        $to = "contact@lockarting.fr";
+        $to = "contact@lockarting.fr, sabinecaizergues@hotmail.com, lockarting.accueil@icloud.com";
+//        $to = "contact@lockarting.fr";
 
         $subject = "[Formulaire de contact] www.lockarting.fr";
 
