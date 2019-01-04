@@ -1,6 +1,6 @@
 $(function() {
 
-    $("textarea").jqBootstrapValidation({
+    $("input, textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
             // additional error messages or events
@@ -18,7 +18,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "verify.php",
+                url: "php/contact_me.php",
                 type: "POST",
                 data: {
                     name: name,
@@ -29,11 +29,10 @@ $(function() {
                 cache: false,
                 success: function() {
                     // Success message
-                    $('#success-mail').html("<div class='alert alert-success'>")
-                        .find('> .alert-success')
-                        .html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                    $('#success-mail').html("<div class='alert alert-success'>");
+                    $('#success-mail > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>")
-                        .append("<strong>Votre message a été envoyé. </strong>")
+                        .append("<strong>Votre message a bien été envoyé. </strong>")
                         .append('</div>');
 
                     //clear all fields
