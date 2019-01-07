@@ -1,20 +1,3 @@
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }; i[r].l = 1 * new Date();
-        a = s.createElement(o);
-        m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-36008660-2', 'auto');
-    ga('send', 'pageview');
-</script>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -118,6 +101,16 @@
 
     <!-- ManyChat - MESSENGER CHATBOT -->
     <script src="//widget.manychat.com/223079824501362.js" async="async"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36008660-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-36008660-2');
+    </script>
 </head>
 
 <body id="page-top">
@@ -530,16 +523,20 @@
                         <h3>Horaires HORS Vacances Scolaires</h3>
                         <img class="img-responsive img-centered" style="width: 20%;" src="img/ecole1.jpg"
                              alt="hors vacances scolaires">
-                        <p>En décembre, hors vacances de Noël, le circuit est ouvert du mercredi au dimanche de 14h00 à
-                            18h00.</p>
-                        <p>En janvier, hors vacances scolaires, le circuit est ouvert seulement le week-end de
-                            14h00 à 18h00.</p>
+                        <p>En décembre, hors vacances de Noël, le circuit est ouvert
+                            <time itemprop="openingHours" datetime="We-Su 14:00-18:00"> du mercredi au dimanche de 14h00 à 18h00.</time>
+                        </p>
+                        <p>En janvier, hors vacances scolaires, le circuit est ouvert seulement
+                            <time itemprop="openingHours" datetime="Sa,Su 14:00-18:00"> le week-end de 14h00 à 18h00.</time>
+                        </p>
                         <br>
 
                         <h3>Horaires Vacances Scolaires et Jours Fériés</h3>
                         <img class="img-responsive img-centered" style="width: 20%;" src="img/vacances1.jpg"
                              alt="vacances scolaires">
-                        <p>Pendant toute la durée des vacances de Noël: le circuit est ouvert tous les jours de 14h00 à 18h00.</p>
+                        <p>Pendant toute la durée des vacances de Noël: le circuit est ouvert
+                            <time itemprop="openingHours" datetime="Mo-Su 14:00-18:00"> tous les jours de 14h00 à 18h00.</time>
+                        </p>
                         <strong class="bg-danger"> ATTENTION : Le circuit sera fermé les 25 décembre 2018 et 1er janvier 2019.</strong>
                         <br>
                         <h2>En Image Ca Donne Ca</h2>
@@ -557,20 +554,16 @@
                         <br>
 
                         <p>
-                            <strong>En toute saison, Nous sommes fermés en cas de météo ne permettant pas la pratique
-                                sur circuit.
-                            </strong>
+                            <strong>En toute saison, Nous sommes fermés en cas de météo ne permettant pas la pratique sur circuit.</strong>
                         </p>
 
                         <p>
-                            <strong>Vous êtes perdu? Il pleut des cordes? Vous voulez être certain de ne pas vous
-                                déplacer pour rien? Vous avez raison!
-                            </strong>
+                            <strong>Vous êtes perdu? Il pleut des cordes? Vous voulez être certain de ne pas vous déplacer pour rien? Vous avez raison!</strong>
                         </p>
 
                         <p style="font-size: large;">Appelez-nous!
                             <i class="fa fa-phone">
-                                <a style="color: darkred;" href="tel:0467170342" title="0467170342">04.67.17.03.42</a>
+                                <a style="color: darkred;" href="tel:0467170342" title="0467170342" itemprop="telephone">04.67.17.03.42</a>
                             </i>
                         </p>
 
@@ -603,9 +596,13 @@
                                 frameborder="0" style="border:0;" allowfullscreen></iframe>
 
                         <h3>Notre adresse:</h3>
-                        <p>
-                            <strong>Loc'karting, Route Departementale 172, Lieu-dit La Pailletrice, 34470
-                                Pérols.</strong>
+                        <p itemscope itemtype="http://schema.org/PostalAddress">
+                            <strong>
+                                <span itemprop="name">Loc'karting, </span>
+                                <span itemprop="streetAddress">Route Departementale 172, Lieu-dit La Pailletrice, </span>
+                                <span itemprop="postalCode">34470 </span>
+                                <span itemprop="addressLocality">Pérols.</span>
+                            </strong>
                         </p>
 
                         <p>Si vous venez en <strong>voiture</strong>, nous vous conseillons d'utiliser votre GPS,
