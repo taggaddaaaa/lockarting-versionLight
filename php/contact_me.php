@@ -49,7 +49,7 @@ if (empty($_POST['name'])  		||
 	$header.= "Content-Type: text/plain; charset=\"ISO - 8859 - 1\"".$simple_passage_ligne;
 	$header.= "Content-Transfer-Encoding: 8bit".$simple_passage_ligne;
 
-	$email_body= $simple_passage_ligne.$message_txt.$simple_passage_ligne;
+	$email_body= $message_txt.$simple_passage_ligne;
 
 	mail($mail,$subject,$email_body,$header);
 	return true;
