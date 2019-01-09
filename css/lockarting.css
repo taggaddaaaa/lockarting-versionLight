@@ -202,6 +202,11 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+#circuit .img-circle {
+    width: 100%;
+    border-radius: 50%;
+}
+
 #infos .infos-item {
     right: 0;
     margin: 0 0 15px;
@@ -447,11 +452,6 @@ nav ul.navbar-nav {
 
 .table .column {
     border-right: 1px solid #ddd;
-}
-
-.img-circle{
-    width: 100%;
-    /*height: 100%;*/
 }
 
 .navbar-default .nav li a {
