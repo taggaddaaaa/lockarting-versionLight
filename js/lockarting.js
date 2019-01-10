@@ -48,3 +48,21 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+
+/**
+ * SCROLL TO THE TOP OF THE PAGE
+ */
+$(window).on('scroll', function() {
+    if ($(this).scrollTop() > 500) {
+        $('.tap-top').fadeIn();
+    } else {
+        $('.tap-top').fadeOut();
+    }
+});
+$('.tap-top').on('click', function() {
+    $("html, body").animate({
+        scrollTop: 0
+    }, 600);
+    return false;
+});

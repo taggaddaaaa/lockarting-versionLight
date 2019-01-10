@@ -555,3 +555,31 @@ nav ul.navbar-nav {
     top: 0;
     left: 50%;
 }
+
+/**
+Button to scroll to the top of the page
+ */
+.tap-top{
+    color:#fed136;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 150px;
+    right: 30px;
+    z-index: 99;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 2.2;
+    display: none;
+    border: 2px solid #fed136;
+}
+
+@media (max-width: 480px) and (max-width: 400px) {
+    .tap-top {
+        width: 40px;
+        height: 40px;
+        line-height: 1.7;
+    }
+}
