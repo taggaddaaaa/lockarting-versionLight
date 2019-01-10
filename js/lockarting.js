@@ -1,4 +1,34 @@
-// jQuery for page scrolling feature - requires jQuery Easing plugin
+/**
+ * FONT FACE OBSERVER
+ *  Use Font Face Observer to avoid flash of invisible text
+ *  It detects when a font loads
+ */
+const robotoObserver = new FontFaceObserver('Roboto Slab');
+const montserratObserver = new FontFaceObserver('Montserrat');
+const droidSerifObserver = new FontFaceObserver('Droid Serif');
+
+Promise.all([
+    robotoObserver.load(),
+    montserratObserver.load(),
+    droidSerifObserver.load()
+]).then(function(){
+    document.documentElement.className += " fonts-loaded";
+});
+
+
+/**
+ * CAROUSEL
+ * Script to activate the carousel
+ */
+$('.carousel').carousel({
+    interval: 3000 //changes the speed
+});
+
+
+/**
+ * JQUERY
+ * Script for page scrolling feature - requires jQuery Easing plugin
+ */
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         let $anchor = $(this);
