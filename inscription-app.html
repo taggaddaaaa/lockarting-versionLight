@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pré inscription</title>
+
+    <!-- Bootstrap Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="css/lockarting.css" rel="stylesheet">
+
+    <!-- FontAwesome Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Je suis un titre ! Enfin je crois ? ¯\_(ツ)_/¯</h2>
+                <h3 class="section-subheading text-muted">
+                    Inscris toi sur notre application des enfers pour voir tous tes temps bla bla bla et en plus bla bla bla ca trous le cul !!!!
+                </h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <form name="sentMessage" id="inscriptionForm" accept-charset="UTF-8">
+                    <div class="row">
+                        <div class="col-md-6 control-group">
+                            <div class="form-group controls">
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Votre nom *"
+                                       id="first_name"
+                                       name="first_name"
+                                       required
+                                       data-validation-name-regex="([a-zA-Z]*[\s]*[a-zA-Z]*)*"
+                                       data-validation-name-message="S'il vous plait, entrez un nom correct."
+                                >
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 control-group">
+                            <div class="form-group controls">
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Votre Prénom *"
+                                       id="last_name"
+                                       name="last_name"
+                                       required
+                                       data-validation-name-regex="([a-zA-Z]*[\s]*[a-zA-Z]*)*"
+                                       data-validation-name-message="S'il vous plait, entrez un nom correct."
+                                >
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 control-group">
+                            <div class="form-group controls">
+                                <input type="email"
+                                        class="form-control"
+                                        placeholder="Votre Email *"
+                                        id="email"
+                                        name="email"
+                                        required
+                                        data-validation-email-message="S'il vous plait, entrez un email correct.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 control-group">
+                            <div class="form-group controls">
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Votre mot de passe *"
+                                       id="password"
+                                       name="password"
+                                       required
+                                       data-validation-name-message="S'il vous plait, entrez un mot de passe correct."
+                                >
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6 control-group">
+                            <div class="form-group controls">
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Votre Pseudo *"
+                                       id="pseudo"
+                                       name="pseudo"
+                                       required
+                                       data-validation-name-regex="([a-zA-Z]*[\s]*[a-zA-Z]*)*"
+                                       data-validation-name-message="S'il vous plait, entrez un Pseudo correct."
+                                >
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 control-group">
+                            <div class="form-group controls">
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Nom de la societe (facultatif)"
+                                       id="societe"
+                                       name="societe">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="col-lg-12 text-center">
+                            <div id="success-mail"></div>
+
+                            <input type="submit" class="btn btn-xl" value="Envoi"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://unpkg.com/jquery@1.12.4/dist/jquery.js"></script>
+<script src="js/inscription-app.js" type="text/javascript"></script>
+<!--<script type="text/javascript">-->
+    <!--var frm = $('#inscriptionForm');-->
+
+    <!--frm.submit(function (e) {-->
+        <!--console.log("TAMERWE");-->
+        <!--e.preventDefault();-->
+
+        <!--$.ajax({-->
+            <!--type: frm.attr('method'),-->
+            <!--url: frm.attr('action'),-->
+            <!--data: frm.serialize(),-->
+            <!--success: function (data) {-->
+                <!--console.log('Submission was successful.');-->
+                <!--console.log(data);-->
+            <!--},-->
+            <!--error: function (data) {-->
+                <!--console.log('An error occurred.');-->
+                <!--console.log(data);-->
+            <!--},-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
+</body>
+</html>
