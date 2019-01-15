@@ -4,16 +4,17 @@
  * Date: 12/01/19
  * Time: 22:45 PM
  */
+// TODO: checker si le pseudo existe deja? checker si l email est deja utilise? Double check password ?
 $(function() {
     $("#registerForm").submit(function (e) {
 
         let dataToSend = {
-                first_name: $("input#first_name").val(),
-                last_name: $("input#last_name").val(),
-                pseudo: $("input#pseudo").val(),
-                email: $("input#email").val(),
-                password: $("input#password").val(),
-                society: $("input#society").val()
+            first_name: $("input#first_name").val(),
+            last_name: $("input#last_name").val(),
+            pseudo: $("input#pseudo").val(),
+            email: $("input#email").val(),
+            password: $("input#password").val(),
+            society: $("input#society").val()
         };
 
         $.ajax({
@@ -23,8 +24,8 @@ $(function() {
             dataType: 'json',
             contentType: 'application/json',
             success: function (data) {
-                $('#success-mail').html("<div class='alert alert-success'>");
-                $('#success-mail > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                $('#success-register').html("<div class='alert alert-success'>");
+                $('#success-register > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                     .append("</button>")
                     .append("<strong>Votre inscription a bien ete prise en compte. Nous vous tiendrons au courant quand l'application sera prête !</strong>")
                     .append('</div>');
@@ -42,14 +43,13 @@ $(function() {
                         }
                     }
                 }
-                $('#success-mail').html("<div class='alert alert-danger'>")
+                $('#success-register').html("<div class='alert alert-danger'>")
                     .find('> .alert-danger')
                     .html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                     .append("</button>")
                     .append("<strong>" + message)
                     .append('</div>');
 
-                
                 $('#registerForm').trigger("reset");
             }
         });
