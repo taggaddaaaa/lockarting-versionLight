@@ -4,17 +4,16 @@
  * Date: 12/01/19
  * Time: 22:45 PM
  */
-
 $(function() {
-    $("#inscriptionForm").submit(function (e) {
+    $("#registerForm").submit(function (e) {
 
-        var dataToSend = {
+        let dataToSend = {
                 first_name: $("input#first_name").val(),
                 last_name: $("input#last_name").val(),
                 pseudo: $("input#pseudo").val(),
                 email: $("input#email").val(),
                 password: $("input#password").val(),
-                societe: $("input#societe").val()
+                society: $("input#society").val()
         };
 
         $.ajax({
@@ -29,7 +28,7 @@ $(function() {
                     .append("</button>")
                     .append("<strong>Votre inscription a bien ete prise en compte. Nous vous tiendrons au courant quand l'application sera prête !</strong>")
                     .append('</div>');
-                $('#inscriptionForm').trigger("reset");
+                $('#registerForm').trigger("reset");
             },
             error: function(error) {
                 error = error.responseJSON;
@@ -51,7 +50,7 @@ $(function() {
                     .append('</div>');
 
                 
-                // $('#inscriptionForm').trigger("reset");
+                $('#registerForm').trigger("reset");
             }
         });
 

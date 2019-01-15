@@ -93,7 +93,7 @@
 <body id="page-top">
 
 <!-- Navigation -->
-<nav class="navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
@@ -118,7 +118,7 @@
                 <li><a class="page-scroll" href="#infos">Infos Pratiques</a></li>
                 <li><a class="page-scroll" href="#boutique">Boutique</a></li>
                 <li><a class="page-scroll" href="#contact">Contact</a></li>
-                <li><a class="page-scroll" href="inscription-app.html">Pre-inscription</a></li>
+                <li class="yellow"><a href="register.html">Creer un compte</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -471,10 +471,8 @@
             </div>
 
             <div class="col-md-4">
-                <ul class="list-inline quicklinks">
-                    <li>
-                        <a href="#infosModal4" class="infos-link" data-toggle="modal">Mentions légales</a>
-                    </li>
+                <ul class="copyright">
+                    <li><a href="#infosModal4" class="infos-link" data-toggle="modal">Mentions légales</a></li>
                 </ul>
             </div>
         </div>
@@ -485,9 +483,8 @@
     <div><i class="fa fa-angle-double-up"></i></div>
 </div>
 
-
 <!-- Infos pratiques HORAIRES -->
-<div class="infos-modal modal fade" id="infosModal1" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="infosModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -557,7 +554,7 @@
 </div>
 
 <!-- infos pratique modal VENIR -->
-<div class="infos-modal modal fade" id="infosModal2" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="infosModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -623,7 +620,7 @@
 </div>
 
 <!-- Infos pratiques Modal Tarifs -->
-<div class="infos-modal modal fade" id="infosModal3" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="infosModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -814,7 +811,7 @@
 </div>
 
 <!-- Mentions legales -->
-<div class="infos-modal modal fade" id="infosModal4" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="infosModal4" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -827,7 +824,6 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
                         <h2>Mentions Légales</h2>
-                        <p style="text-align: center;">
                         <p style="text-align: justify;">
                             <strong><span style="font-size: medium; ">1. Présentation du site :</span><br/>
                                  </strong><br/>Conformément aux dispositions des articles 6-III et 19 de la Loi n°
@@ -1075,6 +1071,8 @@
 <!-- Contact Form JavaScript -->
 <script src="js/jqBootstrapValidation.js"></script>
 <script src="js/contact_me.js"></script>
+<!-- Script to activate the carousel -->
+<script>$('.carousel').carousel({interval: 3000}); //changes the speed</script>
 </body>
 
 </html>
