@@ -1,6 +1,123 @@
-@media screen and (max-width: 991px) {
-    .off-canvas-sidebar .page-header>.container {
-         padding-top: 0;
-         padding-bottom: 0;
+
+/*************************************************************
+**  CUSTOM REGISTER.HTML
+**************************************************************/
+#register-bg {
+    background-image: url('../img/piste3.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+.form-container {
+    margin: 50px auto 50px auto;
+}
+.input-group-terms {
+    margin: 1em 0;
+}
+.register-page.page-header {
+    background-position: top;
+}
+.register-page .card-signUp {
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+    margin-bottom: 100px;
+    padding: 40px 0;
+    margin-top: 15vh;
+}
+.register-page .card-signUp .info {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0;
+}
+.register-page .card-signUp .info .info-title {
+    color: #3c4858;
+    margin: 30px 0 15px;
+}
+.register-page .card-signUp .form-check {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.register-page .card-signUp .form-check label {
+    margin-left: 27px;
+}
+.register-page .card-signUp .form-check .checkbox-material {
+    padding-right: 20px;
+}
+.register-page .card-signUp .form-check a {
+    color: #9c27b0;
+}
+.register-page .card-signUp .info-horizontal .icon {
+    float: left;
+    margin-top: 24px;
+    margin-right: 10px;
+}
+.register-page .card-signUp .info-horizontal .icon i {
+    font-size: 2.6em;
+}
+.register-page .card-signUp .info-horizontal .icon.icon-primary {
+    color: #9c27b0;
+}
+.register-page .card-signUp .info-horizontal .icon.icon-info {
+    color: #00bcd4;
+}
+.register-page .card-signUp .info-horizontal .icon.icon-success {
+    color: #4caf50;
+}
+.register-page .card-signUp .info-horizontal .icon.icon-warning {
+    color: #ff9800;
+}
+.register-page .card-signUp .info-horizontal .icon.icon-danger {
+    color: #f44336;
+}
+.register-page .card-signUp .info-horizontal .icon.icon-rose {
+    color: #e91e63;
+}
+.register-page .card-signUp .info-horizontal .description {
+    overflow: hidden;
+}
+.register-page .card-signUp .form-group {
+    margin: 27px 0 0 7px;
+    padding-bottom: 0;
+}
+.register-page .container {
+    position: relative;
+    z-index: 3;
+}
+.register-page .footer {
+    color: #fff;
+}
+.register-page .footer .container {
+    padding: 0;
+}
+.register-page .footer .copyright-register a {
+    color: #fff;
+}
+.register-page .footer .copyright-register a:hover {
+    color: #fed136;
+}
+.register-page .form-check label {
+    margin-left: 27px;
+}
+.register-page .form-check .form-check-label {
+    padding-left: 34px;
+}
+.register-page .page-header {
+    background-position: top;
+}
+
+@media (max-width:991px) {
+    .page-header.pricing-page, .page-header.register-page {
+        min-height: fit-content!important;
     }
+    .off-canvas-sidebar .page-header>.container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+.card-header-success {
+    margin-top: -60px;
+}
+.register-footer {
+    padding: 25px 0;
+    margin: 50px 0 25px 0;
+    text-align: center;
 }
