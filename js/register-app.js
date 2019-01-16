@@ -4,7 +4,7 @@
  * Date: 12/01/19
  * Time: 22:45 PM
  */
-// TODO: checker si le pseudo existe deja? checker si l email est deja utilise? Double check password ?
+// TODO: Double check password ? faire une redirection vers la home si le formulaire s'envoi bien
 $(function() {
     $("#registerForm").submit(function (e) {
 
@@ -29,7 +29,7 @@ $(function() {
                     .append("</button>")
                     .append("<strong>Votre inscription a bien ete prise en compte. Nous vous tiendrons au courant quand l'application sera prête !</strong>")
                     .append('</div>');
-                $('#registerForm').trigger("reset");
+                // $('#registerForm').trigger("reset");
             },
             error: function(error) {
                 error = error.responseJSON;
@@ -50,7 +50,7 @@ $(function() {
                     .append("<strong>" + message)
                     .append('</div>');
 
-                $('#registerForm').trigger("reset");
+                // $('#registerForm').trigger("reset");
             }
         });
 

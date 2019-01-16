@@ -69,10 +69,10 @@ $('.tap-top').on('click', function() {
  * @returns {boolean}
  */
 function show_element(id) {
-    if (document.getElementById(id).style.visibility ==="hidden") {
-        document.getElementById(id).style.visibility ="visible";
+    if (document.getElementById(id).style.visibility === "hidden") {
+        document.getElementById(id).style.visibility = "visible";
     } else {
-        document.getElementById(id).style.visibility ="hidden";
+        document.getElementById(id).style.visibility = "hidden";
     }
     return true;
 }
