@@ -496,56 +496,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>Horaires Décembre 2018 et Janvier 2019</h2>
-                        <p class="item-intro text-muted">Est-ce que votre circuit préféré est ouvert?</p>
-                        <h3>Horaires HORS Vacances Scolaires</h3>
-                        <img class="img-responsive img-centered" style="width: 20%;" src="assets/img/ecole1.jpg"
-                             alt="hors vacances scolaires">
-                        <p>En décembre, hors vacances de Noël, le circuit est ouvert
-                            <time itemprop="openingHours" datetime="We-Su 14:00-18:00"> du mercredi au dimanche de 14h00 à 18h00.</time>
-                        </p>
-                        <p>En janvier, hors vacances scolaires, le circuit est ouvert seulement
-                            <time itemprop="openingHours" datetime="Sa,Su 14:00-18:00"> le week-end de 14h00 à 18h00.</time>
-                        </p>
-                        <br>
-
-                        <h3>Horaires Vacances Scolaires et Jours Fériés</h3>
-                        <img class="img-responsive img-centered" style="width: 20%;" src="assets/img/vacances1.jpg"
-                             alt="vacances scolaires">
-                        <p>Pendant toute la durée des vacances de Noël: le circuit est ouvert
-                            <time itemprop="openingHours" datetime="Mo-Su 14:00-18:00"> tous les jours de 14h00 à 18h00.</time>
-                        </p>
-                        <strong class="bg-danger"> ATTENTION : Le circuit sera fermé les 25 décembre 2018 et 1er janvier 2019.</strong>
-                        <br>
-                        <h2>En Image Ca Donne Ca</h2>
-                        <img class="img-responsive img-centered"
-                             src="assets/img/horaires-dec-janv.jpg"
-                             alt="horaires d ouverture du circuit fin 2018"
-                        >
-                        <p>Pour les plus visuels d'entre nous! &#x1F609;
-                            <a href="assets/img/horaires-dec-janv.jpg" download="horaires_fin_2018">
-                                <strong style="color: darkred;">Télécharger l'image</strong>
-                            </a>
-                        </p>
-
-                        <br>
-                        <br>
-
-                        <p>
-                            <strong>En toute saison, Nous sommes fermés en cas de météo ne permettant pas la pratique sur circuit.</strong>
-                        </p>
-
-                        <p>
-                            <strong>Vous êtes perdu? Il pleut des cordes? Vous voulez être certain de ne pas vous déplacer pour rien? Vous avez raison!</strong>
-                        </p>
-
-                        <p style="font-size: large;">Appelez-nous!
-                            <i class="fa fa-phone">
-                                <a style="color: darkred;" href="tel:0467170342" title="0467170342" itemprop="telephone">04.67.17.03.42</a>
-                            </i>
-                        </p>
-
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Retour</button>
+                        <?php include "php/schedule.php"?>
                     </div>
                 </div>
             </div>
