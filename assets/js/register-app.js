@@ -8,8 +8,6 @@ $(function() {
     $("#registerForm").submit(function (e) {
 
         let dataToSend = {
-            first_name: $("input#first_name").val(),
-            last_name: $("input#last_name").val(),
             pseudo: $("input#pseudo").val(),
             email: $("input#email").val(),
             password: $("input#password").val(),
@@ -34,7 +32,7 @@ $(function() {
             contentType: 'application/json',
             success: function (data) {
                 buildAlert(successMessage, "success");
-                document.location.href="index.html";
+                document.location.href="index.php";
             },
             error: function(error) {
                 error = error.responseJSON;
