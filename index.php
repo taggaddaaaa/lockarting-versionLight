@@ -66,7 +66,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link href="assets/css/lockarting.css" rel="stylesheet">
+    <link href="/assets/css/lockarting.css" rel="stylesheet">
 
     <!-- Fonts and Icons -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:400,100,300,700|Droid+Serif:400,700,400italic,700italic|Kaushan+Script|Material+Icons">
@@ -108,7 +108,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand page-scroll" href="#page-top">
-                <img style="width: 250px;" src="assets/img/logo.png" alt="logo de lockarting">
+                <img style="width: 250px;" src="/assets/img/logo.png" alt="logo de lockarting">
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -177,7 +177,7 @@
         <div class="row text-center">
             <div class="col-md-4">
                 <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="assets/img/circuit2.jpg" alt="image du circuit">
+                    <img class="img-circle img-responsive" src="/assets/img/circuit2.jpg" alt="image du circuit">
                 </div>
                 <h4 class="service-heading">Une piste de 700 mètres</h4>
                 <p class="text-muted">
@@ -188,7 +188,7 @@
 
             <div class="col-md-4">
                 <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="assets/img/kart.jpg" alt="image d'un karting adulte">
+                    <img class="img-circle img-responsive" src="/assets/img/kart.jpg" alt="image d'un karting adulte">
                 </div>
                 <h4 class="service-heading">Des kartings nouvelle génération</h4>
                 <p class="text-muted">
@@ -201,7 +201,7 @@
 
             <div class="col-md-4">
                 <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="assets/img/team.JPG" alt="Jean marie caizergues">
+                    <img class="img-circle img-responsive" src="/assets/img/team.JPG" alt="Jean marie caizergues">
                 </div>
                 <h4 class="service-heading">Un staff en or</h4>
                 <p class="text-muted">
@@ -234,7 +234,7 @@
                     <div class="infos-hover">
                         <div class="infos-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                     </div>
-                    <img src="assets/img/ouvert.jpg"
+                    <img src="/assets/img/ouvert.jpg"
                          class="img-responsive"
                          style="width: 360px; height: 225px;"
                          alt="panneau d'heure d'ouverture"
@@ -251,7 +251,7 @@
                     <div class="infos-hover">
                         <div class="infos-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                     </div>
-                    <img src="assets/img/carte.PNG"
+                    <img src="/assets/img/carte.PNG"
                          class="img-responsive"
                          style="width: 360px; height: 225px;"
                          alt="carte"
@@ -268,7 +268,7 @@
                     <div class="infos-hover">
                         <div class="infos-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                     </div>
-                    <img src="assets/img/sous.png"
+                    <img src="/assets/img/sous.png"
                          style="width: 360px; height: 225px;"
                          class="img-responsive"
                          alt="argent"
@@ -381,7 +381,7 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <form name="sentMessage" id="contactForm" method="POST" action="php/contact_me.php" accept-charset="UTF-8">
+                <form name="sentMessage" id="contactForm" method="POST" action="/php/contact_me.php" accept-charset="UTF-8">
                     <div class="row">
                         <div class="col-md-6 control-group">
                             <div class="form-group controls">
@@ -454,7 +454,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-sm-4">
                     <span class="copyright">Copyright &copy;
                         <a target="_blank" href="https://www.linkedin.com/in/taggaddaaaa"
                         >Taggaddaaaa</a>
@@ -462,7 +462,7 @@
                     </span>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <ul class="social">
                     <li class="facebook"><a target="_blank" href="https://facebook.com/circuit.lockarting"><i class="fa fa-facebook fa-3x"></i></a></li>
                     <li class="instagram"><a target="_blank" href="https://www.instagram.com/lockarting/"><i class="fa fa-instagram fa-3x"></i></a></li>
@@ -470,7 +470,7 @@
                 </ul>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <ul class="copyright">
                     <li><a href="#infosModal4" class="infos-link" data-toggle="modal">Mentions légales</a></li>
                 </ul>
@@ -496,7 +496,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <?php include "php/schedule.php"?>
+                        <?php include "/php/schedule.php"?>
                     </div>
                 </div>
             </div>
@@ -589,7 +589,7 @@
                             Contactez-nous pour un devis personnalisé.
                         </p>
 
-                        <img class="img-responsive img-centered" src="assets/img/cochon.jpg" alt="">
+                        <img class="img-responsive img-centered" src="/assets/img/cochon.jpg" alt="">
 
                         <div class="row">
                             <p>Nos séances de location durent <strong>10 minutes</strong> et sont encadrées par un
@@ -746,7 +746,7 @@
                         </div>
 
                         <div class="row">
-                            <img src="assets/img/paiements-acceptes.png" alt="type de paiements acceptés">
+                            <img src="/assets/img/paiements-acceptes.png" alt="type de paiements acceptés">
                             <p>
                                 <strong>Nous acceptons les espèces en euros, les cartes bancaires CB, VISA et Mastercard ainsi que les chèques vacances ANCV.</strong>
                                 Malheureusement, nous n'acceptons plus les chèques bancaires.
@@ -1013,15 +1013,15 @@
 <!-- Plugin JavaScript -->
 <script src="https://unpkg.com/jquery-easing@0.0.1/dist/jquery.easing.1.3.umd.js"></script>
 <script src="https://unpkg.com/classie@1.0.0/lib/classie"></script>
-<script src="assets/js/cbpAnimatedHeader.js"></script>
+<script src="/assets/js/cbpAnimatedHeader.js"></script>
 <script src="https://unpkg.com/fontfaceobserver@2.1.0/fontfaceobserver.standalone.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="assets/js/lockarting.js"></script>
+<script src="/assets/js/lockarting.js"></script>
 
 <!-- Contact Form JavaScript -->
-<script src="assets/js/jqBootstrapValidation.js"></script>
-<script src="assets/js/contact_me.js"></script>
+<script src="/assets/js/jqBootstrapValidation.js"></script>
+<script src="/assets/js/contact_me.js"></script>
 <!-- Script to activate the carousel -->
 <script>$('.carousel').carousel({interval: 3000}); //changes the speed</script>
 </body>
