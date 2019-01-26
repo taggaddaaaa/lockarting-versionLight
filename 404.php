@@ -116,7 +116,7 @@
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a target="_blank" href="https://www.lockarting.fr/#contact" class="nav-link">
+                    <a target="_blank" href="/index.php/#contact" class="nav-link">
                         <i class="material-icons">mail</i> Contact
                     </a>
                 </li>
@@ -142,7 +142,7 @@
                 <nav>
                     <ul>
                         <li><a href="/index.php">Retour au site web</a></li>
-                        <li><a target="_blank" href="https://www.lockarting.fr/#contact">Contact</a></li>
+                        <li><a target="_blank" href="/index.php/#contact">Contact</a></li>
                         <li><a target="_blank" href="https://facebook.com/circuit.lockarting">Facebook</a></li>
                         <li><a target="_blank" href="https://www.instagram.com/lockarting/">Instagram</a></li>
                     </ul>
