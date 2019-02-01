@@ -496,7 +496,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <?php include "/php/schedule.php"?>
+                        <?php include "php/schedule.php"?>
                     </div>
                 </div>
             </div>
