@@ -26,7 +26,7 @@ $(function() {
 
         $.ajax({
             type: "POST",
-            url: "http://ec2-52-47-200-202.eu-west-3.compute.amazonaws.com/public/api/inscription/client",
+            url: "http://ec2-34-245-237-17.eu-west-1.compute.amazonaws.com/public/api/inscription/client",
             data: JSON.stringify(dataToSend),
             dataType: 'json',
             contentType: 'application/json',
