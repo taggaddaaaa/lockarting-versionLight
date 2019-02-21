@@ -34,6 +34,9 @@
     <meta name="keywords" content="karting, circuit de karting, piste de karting, karting à Montpellier, karting Pérols, kart 34, karting 34, enterrement de vie de garçon, enterrement de vie de fille, incentive, chrono, sensation forte">
     <meta name="description" content="À partir de 7 ans, en famille, ou entre amis, Venez défier le chrono sur le circuit mythique de Pérols. Nous accueillons également les entreprises, les enterrement de vie de garçon ou fille.">
 
+    <!-- Schema.org markup for Bing -->
+    <meta name="msvalidate.01" content="59C3B69FF39AADB483F43DE11515F57A" />
+
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="Loc'karting - Circuit de karting de Pérols.">
     <meta itemprop="description" content="À partir de 7 ans, en famille, ou entre amis, Venez défier le chrono sur le circuit mythique de Pérols. Nous accueillons également les entreprises, les enterrement de vie de garçon ou fille.">
