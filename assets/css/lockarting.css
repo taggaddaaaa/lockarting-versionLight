@@ -506,3 +506,7 @@ Button to scroll to the top of the page
         line-height: 1.7;
     }
 }
+
+.mentionsLegales p {
+    text-align: justify;
+}

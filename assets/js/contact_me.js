@@ -32,7 +32,7 @@ $(function() {
                     $('#success-mail').html("<div class='alert alert-success'>");
                     $('#success-mail > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>")
-                        .append("<strong>Votre message a bien été envoyé. </strong>")
+                        .append("<strong>Votre message a bien été envoyé.</strong>")
                         .append('</div>');
 
                     //clear all fields
