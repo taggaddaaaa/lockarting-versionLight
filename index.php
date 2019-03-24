@@ -398,20 +398,21 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <form name="sentMessage" id="contactForm" method="POST" action="/assets/js/contact_me.js" accept-charset="UTF-8">
+                <form id="contactForm"
+                      method="POST"
+                      action="/assets/js/contact_me.js"
+                      accept-charset="UTF-8"
+                >
                     <div class="row">
-                        <div class="col-md-6 control-group">
-                            <div class="form-group controls">
+                        <div class="col-md-6">
+                            <div class="form-group">
                                 <input type="text"
-                                       class="form-control"
+                                       class="form-control form alpha-only"
                                        placeholder="Votre nom *"
                                        id="name"
                                        name="name"
                                        required
-                                       data-validation-name-regex="([a-zA-Z]*[\s]*[a-zA-Z]*)*"
-                                       data-validation-name-message="S'il vous plait, entrez un nom correct."
                                 >
-                                <p class="help-block text-danger"></p>
                             </div>
 
                             <div class="form-group controls">
@@ -421,11 +422,8 @@
                                        id="email"
                                        name="email"
                                        required
-                                       data-validation-email-message="S'il vous plait, entrez un email correct."
                                 >
-                                <p class="help-block text-danger"></p>
                             </div>
-
                             <div class="form-group">
                                 <input type="tel"
                                        class="form-control"
@@ -448,9 +446,7 @@
                                               id="message"
                                               name="message"
                                               required
-                                              data-validation-required-message="S'il vous plait, entrez votre message."
                                     ></textarea>
-                                <p class="help-block text-danger"></p>
                             </div>
                         </div>
 
