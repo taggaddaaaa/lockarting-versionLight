@@ -214,7 +214,7 @@
 							</p>
                             <br>
                             <p style="text-align: justify;">
-                                <strong><span style="font-size: medium; ">9. Liens hypertextes et cookies :</span></strong><br/>
+                                <strong><span style="font-size: medium; ">9. Liens hypertextes et cookies :</span></strong>
                                 <br/>
                                 Le site <a href="/index.php">www.lockarting.fr</a> contient un
                                 certain nombre de liens hypertextes vers d'autres sites (partenaires, informations...) mis en
