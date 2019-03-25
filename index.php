@@ -50,10 +50,11 @@
     <meta name="twitter:site" content="@lockarting">
     <meta name="twitter:title" content="Loc'karting - Circuit de karting de Pérols.">
     <meta name="twitter:description"
-          content="À partir de 7 ans, en famille, ou entre amis, Venez défier le chrono sur le circuit mythique de Pérols. Nous accueillons également les entreprises, les enterrement de vie de garçon ou fille."
+          content="À partir de 7 ans, en famille, ou entre amis, Venez défier le chrono sur le circuit mythique
+          de Pérols. Nous accueillons également les entreprises, les enterrement de vie de garçon ou fille."
     >
     <meta name="twitter:creator" content="@taggaddaaaa">
-    <meta name="twitter:image:src" content="https://lockarting.fr/og-image.jpg">
+    <meta name="twitter:image:src" content="https://lockarting.fr/assets/img/og-image.jpg">
 
     <!-- Open Graph data -->
     <meta property="og:title" content="Loc'karting - Circuit de karting de Pérols."/>
@@ -88,12 +89,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--logo dans la barre de navigation- optimisee par le site https://realfavicongenerator.net -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=GvmAvN3YRN">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=GvmAvN3YRN">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=GvmAvN3YRN">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png?v=GvmAvN3YRN">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png?v=GvmAvN3YRN">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png?v=GvmAvN3YRN">
     <link rel="manifest" href="/site.webmanifest?v=GvmAvN3YRN">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=GvmAvN3YRN" color="#ffc40d">
-    <link rel="shortcut icon" href="/favicon.ico?v=GvmAvN3YRN">
+    <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg?v=GvmAvN3YRN" color="#ffc40d">
+    <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico?v=GvmAvN3YRN">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 

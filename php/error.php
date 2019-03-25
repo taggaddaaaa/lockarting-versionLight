@@ -61,12 +61,12 @@ switch($_SERVER["REDIRECT_STATUS"]){
     <link rel="stylesheet" href="/assets/css/register.css" />
 
     <!--logo dans la barre de navigation- optimisé par le site https://realfavicongenerator.net -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=GvmAvN3YRN">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=GvmAvN3YRN">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=GvmAvN3YRN">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png?v=GvmAvN3YRN">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png?v=GvmAvN3YRN">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png?v=GvmAvN3YRN">
     <link rel="manifest" href="/site.webmanifest?v=GvmAvN3YRN">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=GvmAvN3YRN" color="#ffc40d">
-    <link rel="shortcut icon" href="/favicon.ico?v=GvmAvN3YRN">
+    <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg?v=GvmAvN3YRN" color="#ffc40d">
+    <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico?v=GvmAvN3YRN">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
