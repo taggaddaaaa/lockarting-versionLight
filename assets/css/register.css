@@ -88,10 +88,10 @@
 .register-page .footer .container {
     padding: 0;
 }
-.register-page .footer .copyright-register a {
+.register-page .footer #copyright-register a {
     color: #fff;
 }
-.register-page .footer .copyright-register a:hover {
+.register-page .footer #copyright-register a:hover {
     color: #fed136;
 }
 .register-page .form-check label {

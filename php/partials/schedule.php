@@ -59,7 +59,7 @@ switch ($numMonth) {
 
 }
 
-$imgOfTheMonth = "../assets/img/schedule/mensuel2019/$month.png";
+$imgOfTheMonth = "/assets/img/schedule/mensuel2019/$month.png";
 ?>
 
 <div class="modal-body">
@@ -68,20 +68,20 @@ $imgOfTheMonth = "../assets/img/schedule/mensuel2019/$month.png";
 
 	<?php if (isset($dateHolidays)) : ?>
         <h3>Horaires HORS Vacances Scolaires</h3>
-        <img class="img-responsive img-centered" style="width: 20%;" src="../assets/img/ecole1.jpg"
+        <img class="img-responsive img-centered" style="width: 20%;" src="/assets/img/ecole1.jpg"
              alt="hors vacances scolaires">
         <p>En <?=$month?>, le circuit est ouvert <?= $dateTime?></p>
 
         <br>
 
         <h3>Horaires Vacances Scolaires et Jours Fériés</h3>
-        <img class="img-responsive img-centered" style="width: 20%;" src="../assets/img/vacances1.jpg"
+        <img class="img-responsive img-centered" style="width: 20%;" src="/assets/img/vacances1.jpg"
              alt="vacances scolaires">
         <p>Pendant toute la durée des vacances: le circuit est ouvert <?=$dateHolidays?></p>
 		<?php if (isset($christmasWarning)) : ?><strong class="bg-danger"><?=$christmasWarning?></strong><?php endif; ?>
 
 	<?php else : ?>
-        <img class="img-responsive img-centered" style="width: 20%;" src="../assets/img/horloge.jpg"
+        <img class="img-responsive img-centered" style="width: 20%;" src="/assets/img/horloge.jpg"
              alt="horloge">
         <p>En <?=$month?>, le circuit est ouvert <?= $dateTime?></p>
 	<?php endif; ?>
@@ -99,7 +99,7 @@ $imgOfTheMonth = "../assets/img/schedule/mensuel2019/$month.png";
 		</a>
 	</p>
 	<p>Vous pouvez également
-		<a href="../assets/img/schedule/calendrier2019.png" download="calendrier2019Lockarting">
+		<a href="/assets/img/schedule/calendrier2019.png" download="calendrier2019Lockarting">
 			<strong style="color: darkred;">télécharger le calendrier annuel </strong>
 		</a>
 		des horaires du circuit.

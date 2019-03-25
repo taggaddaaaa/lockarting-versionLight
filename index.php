@@ -135,7 +135,7 @@
                 <li><a class="page-scroll" href="#infos">Infos Pratiques</a></li>
                 <li><a class="page-scroll" href="#boutique">Boutique</a></li>
                 <li><a class="page-scroll" href="#contact">Contact</a></li>
-                <li class="yellow"><a href="/register.html">Inscription</a></li>
+                <li class="yellow"><a href="/php/register.php">Inscription</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -513,7 +513,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-						<?php include "php/schedule.php"?>
+						<?php include "php/partials/schedule.php" ?>
                     </div>
                 </div>
             </div>
@@ -785,7 +785,10 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://unpkg.com/jquery@3.2.1/dist/jquery.js"></script>
 <!-- Bootstrap Core latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"
+></script>
 <!-- Plugin JavaScript -->
 <script src="https://unpkg.com/jquery-easing@0.0.1/dist/jquery.easing.1.3.umd.js"></script>
 <script src="https://unpkg.com/classie@1.0.0/lib/classie"></script>
