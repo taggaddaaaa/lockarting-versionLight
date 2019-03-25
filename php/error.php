@@ -1,7 +1,41 @@
 <?php
-// basic 404 error pageheader('HTTP/1.1 404 Not Found');
-//header('Status: 404 Not Found');
-?>
+switch($_SERVER["REDIRECT_STATUS"]){
+	case 400:
+		$errorCode = "400";
+		$title = "Bad Request";
+		$description = "La demande ne peut pas être traitée en raison d'une syntaxe incorrecte";
+		break;
+	case 401:
+		$errorCode = "401";
+		$title = "Unauthorized";
+		$description = "La demande d'authentification a échoué.";
+		break;
+	case 403:
+		$errorCode = "403";
+		$title = "Forbidden";
+		$description = "Le serveur refuse de répondre à la demande.";
+		break;
+	case 404:
+		$errorCode = "404";
+		$title = "Not Found";
+		$description = "La ressource demandée est introuvable.";
+		break;
+	case 500:
+		$errorCode = "500";
+		$title = "Internal Server Error";
+		$description = "Il y a une erreur serveur inconnue.";
+		break;
+	case 502:
+		$errorCode = "502";
+		$title = "Bad Gateway";
+		$description = "Le serveur agit en tant que proxy et a reçu une requête incorrecte.";
+		break;
+	case 504:
+		$errorCode = "504";
+		$title = "Gateway Timeout";
+		$description = "Le serveur agit en tant que proxy et la demande a expiré.";
+		break;
+}?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -116,7 +150,7 @@
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a target="_blank" href="/index.php/#contact" class="nav-link">
+                    <a target="_blank" href="/index.php#contact" class="nav-link">
                         <i class="material-icons">mail</i> Contact
                     </a>
                 </li>
@@ -131,9 +165,10 @@
 		<div class="content-center">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 style="margin-top: 0; margin-bottom: 0" class="title">404</h1>
-					<h2>Ooooups! :(</h2>
-					<h4>On dirait que vous êtes en panne!</h4>
+					<h1 style="margin-top: 0; margin-bottom: 0;" class="title"><?= $errorCode ?></h1>
+					<h3><?= $title ?></h3>
+					<h2>Ooooups! 😣 On dirait que vous êtes en panne!</h2>
+					<h5><?= $description ?></h5>
 				</div>
 			</div>
 		</div>
@@ -142,7 +177,7 @@
                 <nav>
                     <ul>
                         <li><a href="/index.php">Retour au site web</a></li>
-                        <li><a target="_blank" href="/index.php/#contact">Contact</a></li>
+                        <li><a target="_blank" href="/index.php#contact">Contact</a></li>
                         <li><a target="_blank" href="https://facebook.com/circuit.lockarting">Facebook</a></li>
                         <li><a target="_blank" href="https://www.instagram.com/lockarting/">Instagram</a></li>
                     </ul>

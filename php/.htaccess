@@ -1,1 +1,6 @@
-errordocument 404 /404.php
+errordocument 400 /php/error.php
+errordocument 401 /php/error.php
+errordocument 403 /php/error.php
+errordocument 404 /php/error.php
+errordocument 500 /php/error.php
+errordocument 504 /php/error.php
