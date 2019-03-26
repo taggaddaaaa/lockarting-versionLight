@@ -609,7 +609,7 @@
                             Contactez-nous pour un devis personnalisé.
                         </p>
 
-                        <img class="img-responsive img-centered" src="/assets/img/cochon.jpg" alt="">
+                        <img class="img-responsive img-centered" src="/assets/img/cochon.jpg" alt="Tirelire en cochon">
 
                         <div class="row">
                             <p>Nos séances de location durent <strong>10 minutes</strong> et sont encadrées par un
