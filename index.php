@@ -490,6 +490,7 @@
             <div class="col-sm-4">
                 <ul class="copyright">
                     <li><a href="php/mentions-legales.php" target="_blank" class="infos-link" data-toggle="modal">Mentions légales</a></li>
+                    <li><a href="php/sitemap.php" target="_blank" class="infos-link" data-toggle="modal">Sitemap</a></li>
                 </ul>
             </div>
         </div>
