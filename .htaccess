@@ -1,3 +1,5 @@
+Header set Content-Language "fr-FR"
+
 errordocument 400 /php/error.php
 errordocument 401 /php/error.php
 errordocument 403 /php/error.php

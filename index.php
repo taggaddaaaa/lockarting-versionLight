@@ -15,7 +15,7 @@
     ga('send', 'pageview');
 </script>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <!-- COMMON TAGS -->
