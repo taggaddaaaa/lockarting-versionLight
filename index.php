@@ -333,7 +333,7 @@
                 <div class="thumbnail">
                     <div class="caption">
                         <h3>Billeterie Kart Elite 270cc</h3>
-                        <p>Catégorie adulte à partir de 13ans. Sessions de 10 min.</p>
+                        <p>Catégorie adulte à partir de 14ans. Sessions de 10 min.</p>
                         <p>
                             <a href="https://www.weezevent.com/widget_billeterie.php?id_evenement=127600&amp;code=32646&amp;width_auto=1&amp;color_primary=00AEEF"
                                onclick="let w=window.open('https://www.weezevent.com/widget_billeterie.php?id_evenement=127600&amp;code=32646&amp;width_auto=1&amp;color_primary=00AEEF', 'Billetterie_weezevent', 'width=650, height=600, top=100, left=100, toolbar=no, resizable=yes, scrollbars=yes, status=no'); w.focus(); return false;"
