@@ -82,7 +82,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 ml-auto mr-auto">
-                    <h1 class="card-title text-center text-white" style="margin-top: 25px;">Conditions générales d'utilisation de l'application</h1>
+                    <h1 class="card-title text-center text-white" style="margin-top: 25px;">Conditions générales d'utilisation de l'application Loc'karting</h1>
                     <div class="card card-signup">
                         <div class="card-body">
                             <div class="row">
@@ -151,7 +151,7 @@
                                         ou une adresse e-mail) si vous n’avez pas l’âge minimum requis ou l'autorisation d'un représentant
                                         légal.
                                         <br>
-                                        L’âge minimum requis est de seize (14) ans pour les utilisateurs résidant dans l’Union européenne,
+                                        L’âge minimum requis est de quatorze (14) ans pour les utilisateurs résidant dans l’Union européenne,
                                         (ou l’âge requis dans votre pays pour être en droit de consentir au traitement de vos
                                         données personnelles).
                                         <br>
@@ -196,6 +196,28 @@
                                         de Loc'karting l'autorisent ;
                                         <br>
                                         (d) extraire (« scraping ») des informations;
+                                        <br><br>
+                                        <strong><span>Restrictions liées au personnel Loc'karting: </span></strong>
+                                        <br>
+                                        Des Comptes peuvent être créés et les Services peuvent être utilisés par toute
+                                        personne, respectant les conditions générales d'utilisation comme vu précédemment,
+                                        sans restrictions, SAUF PAR LES MEMBRES DU PERSONNEL LOC'KARTING ET LEUR FAMILLE.
+                                        <br>
+                                        Les membres du personnel Loc'karting et leur famille peuvent se créer un Compte
+                                        et utiliser les services de Loc'karting sans en tirer un avantage de quelque nature que ce soit.
+                                        <br>
+                                        De ce fait, les membres du personnel Loc'karting et leur famille ne peuvent
+                                        échanger leurs KartCoins contre un lot, même si la possibilité ne leur est pas
+                                        techniquement interdite sur l'Application.
+                                        <br>
+                                        L'échange de KartCoins pour un lot par les membres du personnel de Loc'karting
+                                        sera considéré comme <a href="https://www.service-public.fr/particuliers/vosdroits/F1515">
+                                            un abus de confiance</a> et pourrait entrainer des sanctions définies par
+                                        les articles
+                                        <a href="https://www.legifrance.gouv.fr/affichCode.do?idSectionTA=LEGISCTA000006165334&cidTexte=LEGITEXT000006070719">
+                                            314-1 à 314-4 du code pénal
+                                        </a>.
+                                        <br>
                                     </p>
                                     <p style="text-align: justify;">
                                         <br>
@@ -274,7 +296,7 @@
                                         se réserve également la possibilité de mettre en cause la responsabilité civile et/ou pénale
                                         de l'utilisateur, notamment en cas de message à caractère raciste, homophobe, injurieux,
                                         diffamant, ou pornographique, quel que soit le support utilisé (texte, photographie).<br/>
-                                        Il est ici rappelé que les développeurs du site <a href="/index.php">www.lockarting.fr</a>
+                                        Il est ici rappelé que les développeurs du site <a href="https://www.lockarting.fr" target="blank">www.lockarting.fr</a>
                                         gardent trace de l'adresse mail. En conséquence, il
                                         doit être conscient qu'en cas d'injonction de l'autorité judiciaire il peut être retrouvé et
                                         poursuivi.<br/>
@@ -295,13 +317,13 @@
                                     <p style="text-align: justify;">
                                         <strong><span style="font-size: medium; ">9. Liens hypertextes et cookies :</span></strong>
                                         <br/>
-                                        Le site <a href="/index.php">www.lockarting.fr</a> contient un
+                                        Le site <a href="https://www.lockarting.fr" target="blank">www.lockarting.fr</a> contient un
                                         certain nombre de liens hypertextes vers d'autres sites (partenaires, informations...) mis en
                                         place avec l'autorisation du propriétaire du site . Cependant, le propriétaire du site n'a
                                         pas la possibilité de vérifier le contenu des sites ainsi visités  et décline donc toute
                                         responsabilité de ce fait quand aux risques éventuels de contenus illicites.<br/>
                                         <br/>
-                                        L'utilisateur est informé que lors de ses visites sur le site <a href="/index.php">www.lockarting.fr</a>, un ou des cookies
+                                        L'utilisateur est informé que lors de ses visites sur le site <a href="https://www.lockarting.fr" target="blank">www.lockarting.fr</a>, un ou des cookies
                                         sont susceptibles de s'installer automatiquement sur son ordinateur. Un cookie est un
                                         fichier de petite taille, qui ne permet pas l'identification de l?utilisateur, mais qui
                                         enregistre des informations relatives à la navigation d?un ordinateur sur un site. Les
@@ -322,42 +344,42 @@
                                     <p style="text-align: justify;">
                                         <strong><span style="font-size: medium; ">10. Droit applicable et attribution de juridiction:</span></strong>
                                         <br/>
-                                        Tout litige en relation avec l'utilisation du site <a href="/index.php">www.lockarting.fr</a>
-                                        est soumis au droit français. L?utilisateur ainsi que <a href="/index.php">www.lockarting.fr</a>
+                                        Tout litige en relation avec l'utilisation du site <a href="https://www.lockarting.fr" target="blank">www.lockarting.fr</a>
+                                        est soumis au droit français. L?utilisateur ainsi que <a href="https://www.lockarting.fr" target="blank">www.lockarting.fr</a>
                                         acceptent de se soumettre à la compétence exclusive des tribunaux français en cas de litige.<br/>
                                     </p>
                                     <p style="text-align: justify;">
                                         <strong><span style="font-size: medium; ">11. Protection des biens et des personnes - gestion des données
                                     personnelles :</span></strong>
                                         <br/>
-                                        Utilisateur : Internaute se connectant, utilisant le site susnommé : <a href="/index.php">www.lockarting.fr</a><br/>
+                                        Utilisateur : Internaute se connectant, utilisant le site susnommé : <a href="https://www.lockarting.fr" target="blank">www.lockarting.fr</a><br/>
                                         En France, les données personnelles sont notamment protégées par la loi n° 78-87 du 6
                                         janvier 1978, la loi n° 2004-801 du 6 août 2004, l'article L. 226-13 du Code pénal et la
                                         Directive Européenne du 24 octobre 1995.
                                     </p>
                                     <p style="text-align: justify;">
-                                        Sur le site <a href="/index.php">www.lockarting.fr</a>, le
+                                        Sur le site <a href="https://www.lockarting.fr" target="blank">www.lockarting.fr</a>, le
                                         propriétaire du site ne collecte des informations personnelles relatives à l'utilisateur que
-                                        pour le besoin de certains services proposés par le site <a href="/index.php">www.lockarting.fr</a>.
+                                        pour le besoin de certains services proposés par le site <a href="https://www.lockarting.fr" target="blank">www.lockarting.fr</a>.
                                         L'utilisateur fournit ces informations en toute connaissance de cause, notamment lorsqu'il
-                                        procède par lui-même à leur saisie. Il est alors précisé à l'utilisateur du site <a href="/index.php">www.lockarting.fr</a> l?obligation ou
+                                        procède par lui-même à leur saisie. Il est alors précisé à l'utilisateur du site <a href="https://www.lockarting.fr" target="blank">www.lockarting.fr</a> l?obligation ou
                                         non de fournir ces informations.<br/>
                                         Conformément aux dispositions des articles 38 et suivants de la loi 78-17 du 6 janvier 1978
                                         relative à l'informatique, aux fichiers et aux libertés, tout utilisateur dispose d'un droit
                                         d'accès, de rectification, de suppression et d'opposition aux données personnelles le
-                                        concernant. Pour l'exercer, adressez votre demande à <a href="/index.php">www.lockarting.fr</a>
+                                        concernant. Pour l'exercer, adressez votre demande à <a href="https://www.lockarting.fr" target="blank">www.lockarting.fr</a>
                                         par Email au webmaster, ou faites une demande écrite et signée, accompagnée d?une copie du
                                         titre d'identité avec signature du titulaire de la pièce, en précisant l'adresse à laquelle
                                         la réponse doit être envoyée.
                                     </p>
                                     <p style="text-align: justify;">
-                                        Aucune information personnelle de l'utilisateur du site <a href="/index.php">www.lockarting.fr</a>
+                                        Aucune information personnelle de l'utilisateur du site <a href="https://www.lockarting.fr" target="blank">www.lockarting.fr</a>
                                         n'est publiée à l'insu de l'utilisateur, échangée, transférée, cédée ou vendue sur un
-                                        support quelconque à des tiers. Seule l'hypothèse du rachat du site <a href="/index.php">www.lockarting.fr</a> au propriétaire du
+                                        support quelconque à des tiers. Seule l'hypothèse du rachat du site <a href="https://www.lockarting.fr" target="blank">www.lockarting.fr</a> au propriétaire du
                                         site et de ses droits permettrait la transmission des dites informations à l'éventuel
                                         acquéreur qui serait à son tour tenu de la même obligation de conservation et de
-                                        modification des données vis-à-vis de l'utilisateur du site <a href="/index.php">www.lockarting.fr</a>.<br/>
-                                        Le site <a href="/index.php">www.lockarting.fr</a> est déclaré à la CNIL sous le numéro en cours.
+                                        modification des données vis-à-vis de l'utilisateur du site <a href="https://www.lockarting.fr" target="blank">www.lockarting.fr</a>.<br/>
+                                        Le site <a href="https://www.lockarting.fr" target="blank">www.lockarting.fr</a> est déclaré à la CNIL sous le numéro en cours.
                                     </p>
                                     <p style="text-align: justify;">
                                         Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998
