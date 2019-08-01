@@ -101,13 +101,6 @@
     <!-- ManyChat - MESSENGER CHATBOT -->
     <script src="//widget.manychat.com/223079824501362.js" async="async"></script>
 
-    <!-- Mailchimp script for pop-up-->
-    <script id="mcjs">
-        !function(c,h,i,m,p){
-            m=c.createElement(h), p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)
-        }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/4b0e4daf2e610870f7b8f179d/b6214fc7e9c4b4d94a2c7d6f0.js");
-    </script>
-
     <!--TODO: Manage Cookies-->
 </head>
 
