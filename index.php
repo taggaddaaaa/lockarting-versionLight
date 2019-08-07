@@ -131,7 +131,7 @@
                 <li><a class="page-scroll" href="#infos">Infos Pratiques</a></li>
                 <li><a class="page-scroll" href="#boutique">Boutique</a></li>
                 <li><a class="page-scroll" href="#contact">Contact</a></li>
-                <li class="yellow"><a href="/php/register.php">Inscription</a></li>
+                <li class="yellow"><a href="/application">Application</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
