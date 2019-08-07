@@ -24,7 +24,7 @@
 					</a>
 				</li>
 				<li class="nav-item ">
-					<a target="_blank" href="https://www.instagram.com/lockarting/" class="nav-link">
+					<a target="_blank" href="https://www.instagram.com/lockarting34" class="nav-link">
 						<i class="material-icons">photo_camera</i> Instagram
 					</a>
 				</li>

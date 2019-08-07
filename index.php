@@ -475,7 +475,7 @@
             <div class="col-sm-4">
                 <ul class="social">
                     <li class="facebook"><a target="_blank" href="https://facebook.com/circuit.lockarting"><i class="fa fa-facebook fa-3x"></i></a></li>
-                    <li class="instagram"><a target="_blank" href="https://www.instagram.com/lockarting/"><i class="fa fa-instagram fa-3x"></i></a></li>
+                    <li class="instagram"><a target="_blank" href="https://www.instagram.com/lockarting34"><i class="fa fa-instagram fa-3x"></i></a></li>
                     <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/11171242/"><i class="fa fa-linkedin fa-3x"></i></a></li>
                 </ul>
             </div>
