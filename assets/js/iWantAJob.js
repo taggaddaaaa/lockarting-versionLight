@@ -21,10 +21,10 @@ $(function() {
                 url: "php/iWantAJob.php",
                 type: "POST",
                 data: {
-                    fname: name,
-                    lname: phone,
+                    fname: fname,
+                    lname: lname,
                     email: email,
-                    phone: message,
+                    phone: phone,
                     car: car,
                     birth: birth,
                     identity: identity
@@ -40,7 +40,7 @@ $(function() {
                         .append('</div>');
 
                     //clear all fields
-                    $('#contactForm').trigger("reset");
+                    $('#jobForm').trigger("reset");
                 },
                 error: function() {
                     // Fail message
@@ -52,7 +52,7 @@ $(function() {
                         .append('</div>');
 
                     //clear all fields
-                    $('#contactForm').trigger("reset");
+                    $('#jobForm').trigger("reset");
                 },
             })
         },

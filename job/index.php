@@ -119,7 +119,8 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 ml-auto mr-auto">
                 <div class="card card-login">
-                    <form class="form"
+                    <form id="jobForm"
+                          class="jobForm"
                           method="POST"
                           action="/assets/js/iWantAJob.js"
                           accept-charset="UTF-8"
@@ -128,6 +129,7 @@
                             <h4 class="card-title"><b>REMPLI LE FORMULAIRE POUR ÊTRE RECONTACTÉ(E) :</b></h4>
                         </div>
                         <div class="card-body">
+<!--                            prenom-->
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                 <span class="input-group-text">
@@ -137,6 +139,8 @@
                                 <input id="fname" name="fname" required
                                        type="text" class="form-control" placeholder="Prénom...">
                             </div>
+
+<!--                            nom-->
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                 <span class="input-group-text">
@@ -146,6 +150,8 @@
                                 <input id="lname" name="lname" required
                                        type="text" class="form-control" placeholder="Nom...">
                             </div>
+
+<!--                            mail-->
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                 <span class="input-group-text">
@@ -155,6 +161,8 @@
                                 <input id="email" name="email" required
                                        type="email" class="form-control" placeholder="Email...">
                             </div>
+
+<!--                            telephone-->
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                 <span class="input-group-text">
@@ -164,6 +172,8 @@
                                 <input id="phone" name="phone" required
                                        type="tel" class="form-control" placeholder="Téléphone...">
                             </div>
+
+<!--                            vehicule-->
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                 <span class="input-group-text">
@@ -179,6 +189,7 @@
                                     </label>
                                 </div>
                             </div>
+<!--                            Date de Naissance-->
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                 <span class="input-group-text">
@@ -191,6 +202,7 @@
                                     Date de naissance
                                 </label>
                             </div>
+<!--                            CNI-->
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">

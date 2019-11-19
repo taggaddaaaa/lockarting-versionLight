@@ -7,3 +7,4 @@
 
 <script src="/assets/js/lockarting.js"></script>
 <script src="/assets/js/register-app.js"></script>
+<script src="/assets/js/jqBootstrapValidation.js"></script>
