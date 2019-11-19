@@ -4,7 +4,7 @@
         document.write(new Date().getFullYear());
 	</script> -
 	Fait avec
-	<i class="material-icons">favorite</i>
+	<i style="font-size: 1rem;" class="material-icons">favorite</i>
 	par
-	<a href="https://www.facebook.com/taggaddaaaa/" target="_blank">Taggaddaaaa Web Studio</a>.
+	<a class="text-info" href="https://www.linkedin.com/in/taggaddaaaa/" target="_blank"><b>Sabine Caizergues</b></a>.
 </div>
