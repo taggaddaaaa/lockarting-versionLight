@@ -81,3 +81,21 @@
     overflow: hidden;
     top: 11.58%; bottom: 11.58%; left: 5.97%; right: 5.97%;
 }
+
+
+/*TEXT-TRANSFORM*/
+.lowercase {
+    text-transform: lowercase;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.inherit {
+    text-transform: inherit;
+}
