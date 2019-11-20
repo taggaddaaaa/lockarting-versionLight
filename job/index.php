@@ -143,7 +143,7 @@ if (manageJobInscription()) {
                                   <i class="material-icons">face</i>
                                 </span>
                                 </div>
-                                <input id="fname" name="fname" required
+                                <input id="fname" name="fname"
                                        type="text" class="form-control" placeholder="Prénom..." value="<?php if (isset($_POST)) echo $_POST['fname']; ?>">
                             </div>
 
@@ -154,7 +154,7 @@ if (manageJobInscription()) {
                                   <i class="material-icons">face</i>
                                 </span>
                                 </div>
-                                <input id="lname" name="lname" required
+                                <input id="lname" name="lname"
                                        type="text" class="form-control" placeholder="Nom..." value="<?php if (isset($_POST)) echo $_POST['lname']; ?>">
                             </div>
 
@@ -165,7 +165,7 @@ if (manageJobInscription()) {
                                   <i class="material-icons">mail</i>
                                 </span>
                                 </div>
-                                <input id="email" name="email" required
+                                <input id="email" name="email"
                                        type="email" class="form-control" placeholder="Email..." value="<?php if (isset($_POST)) echo $_POST['email']; ?>">
                             </div>
 
@@ -176,7 +176,7 @@ if (manageJobInscription()) {
                                   <i class="material-icons">phone</i>
                                 </span>
                                 </div>
-                                <input id="phone" name="phone" required
+                                <input id="phone" name="phone"
                                        type="tel" class="form-control" placeholder="Téléphone..." value="<?php if (isset($_POST)) echo $_POST['phone']; ?>">
                             </div>
 
@@ -190,12 +190,13 @@ if (manageJobInscription()) {
                                 <div class="togglebutton">
                                     <label>
                                         <input id="car" name="car"
-                                               type="checkbox" <?php if (isset($_POST) && $_POST['car']) echo 'checked'; ?>>
+                                               type="checkbox" <?php if (isset($_POST) && $_POST['car']) echo 'checked'; ?>
                                         <span class="toggle"></span>
                                         Je suis véhiculé
                                     </label>
                                 </div>
                             </div>
+
 <!--                            Date de Naissance-->
                             <div class="input-group">
                                 <div class="input-group-prepend">
@@ -209,6 +210,7 @@ if (manageJobInscription()) {
                                     Date de naissance
                                 </label>
                             </div>
+
 <!--                            CNI-->
                             <div class="input-group">
                                 <div class="input-group-prepend">
@@ -222,6 +224,8 @@ if (manageJobInscription()) {
                                     Passeport ou CNI...
                                 </label>
                             </div>
+
+<!--                            SUBMIT-->
                             <div class="input-group">
                                 <div id="success-mail"></div>
                                 <input type="submit" name="submitForm" class="btn btn-success btn-wd btn-lg" value="Je Postule !" />

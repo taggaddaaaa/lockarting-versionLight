@@ -9,16 +9,17 @@ function manageJobInscription() {
         empty($_POST['lname'])    ||
         empty($_POST['email'])    ||
         empty($_POST['phone'])    ||
-        empty($_POST['car'])      ||
         empty($_POST['birth'])    ||
         empty($_POST['identity'])) {
         echo "<script>alert(\"Tous les champs sont obligatoires\")</script>";
         return false;
     }
+
     if (empty($_FILES["identity"]) && $_FILES['identity']['name'] != "") {
         echo "<script>alert(\"Pièce d'identité invalide\")</script>";
         return false;
     }
+
     if (!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)) {
         echo "<script>alert(\"Email invalide\")</script>";
         return false;
@@ -71,7 +72,7 @@ function manageJobInscription() {
     $header .= "Reply-to: \"" . $email . "\" <" . $email . ">" . $simple_passage_ligne;
     $header .= "MIME-Version: 1.0" . $simple_passage_ligne;
     $header .= "Content-Type: text/plain; charset=\"ISO-8859-1\"" . $simple_passage_ligne;
-//    $header .= "Content-Transfer-Encoding: 8bit" . $simple_passage_ligne;
+    $header .= "Content-Transfer-Encoding: 8bit" . $simple_passage_ligne;
 
     //Contenu du message (alternative pour deux versions ex:text/plain et text/html
     $header .= 'Content-Type: multipart/mixed; boundary='.$boundary .' '. $simple_passage_ligne;
@@ -80,12 +81,14 @@ function manageJobInscription() {
     $message_txt .= "Prénom: " . $fname . $simple_passage_ligne;
     $message_txt .= "Nom: " . $lname . $simple_passage_ligne;
     $message_txt .= "Email: " . $email . $simple_passage_ligne;
-    $message_txt .= "Tel.: " . $phone . $double_passage_ligne;
+    $message_txt .= "Tel.: " . $phone . $simple_passage_ligne;
+    $message_txt .= "Date de naissance: " . $birth . $double_passage_ligne;
     if (!$car) {
         $message_txt .= "Ce candidat n'a pas renseigné ou n'est pas véhiculé." . $double_passage_ligne;
     } else {
         $message_txt .= "Ce candidat est véhiculé." . $double_passage_ligne;
     }
+
     if ($_FILES['identity']['size']) {
         $message_txt .= "La pièce d'identité du candidat se trouve en pièce jointe." . $simple_passage_ligne;
     }
@@ -98,7 +101,7 @@ function manageJobInscription() {
     if($nom_fichier != ".htaccess"){ //Vérifie que ce n'est pas un .htaccess
         if($type_fichier == "image/jpeg"
             || $type_fichier == "image/pjpeg"
-            || $type_fichier == "application/pdf"){ //Soit un jpeg soit un pdf
+            || $type_fichier == "application/pdf") { //Soit un jpeg soit un pdf
 
             if ($taille_fichier <= 2097152) { //Taille supérieure à Mo (en octets)
                 $tabRemplacement = array("é"=>"e", "è"=>"e", "à"=>"a"); //Remplacement des caractères spéciaux
@@ -115,26 +118,27 @@ function manageJobInscription() {
                 $email_message .= "n"; //Ligne blanche. IMPORTANT !
                 $email_message .= $encoded_content."n"; //Pièce jointe
 
-            }else{
+            } else {
                 //Message d'erreur
                 $email_message .= $simple_passage_ligne ."L'utilisateur a tenté de vous envoyer une pièce jointe mais celle ci était superieure à 2Mo.". $simple_passage_ligne;
             }
-        }else{
+        } else {
             //Message d'erreur
             $email_message .= $simple_passage_ligne ."L'utilisateur a tenté de vous envoyer une pièce jointe mais elle n'était pas au bon format.". $simple_passage_ligne;
         }
-    }else{
+    } else {
         //Message d'erreur
         $email_message .= $simple_passage_ligne ."L'utilisateur a tenté de vous envoyer une pièce jointe .htaccess.". $simple_passage_ligne;
     }
+
     $email_message .= $simple_passage_ligne . "--" . $boundary . "--" . $simple_passage_ligne; //Séparateur de fermeture
 
-//    $email_body = $message_txt . $simple_passage_ligne;
 
     if (mail($mail, $subject, $email_message, $header)) {
         echo "<script>alert(\"Candidature transmise !\")</script>";
         return true;
+    } else {
+        echo "<script>alert(\"Une erreur est survenue, merci de réessayer plus tard\")</script>";
+        return false;
     }
-    echo "<script>alert(\"Une erreur est survenue, merci de réessayer plus tard\")</script>";
-    return false;
 }
