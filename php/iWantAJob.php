@@ -1,17 +1,29 @@
 <?php
+function manageJobInscription() {
 
-if (empty($_POST['fname'])    ||
-    empty($_POST['lname'])    ||
-    empty($_POST['email'])    ||
-    empty($_POST['phone'])    ||
-    empty($_POST['car'])      ||
-    empty($_POST['birth'])    ||
-    empty($_POST['identity']) ||
-    empty($_FILES["identity"]) && $_FILES['identity']['name'] != "" ||
-    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)) {
-    echo "Aucune données du formulaire reçues";
-    return false;
-} else {
+    if (!isset($_POST['submitForm'])) {
+        return false;
+    }
+
+    if (empty($_POST['fname'])    ||
+        empty($_POST['lname'])    ||
+        empty($_POST['email'])    ||
+        empty($_POST['phone'])    ||
+        empty($_POST['car'])      ||
+        empty($_POST['birth'])    ||
+        empty($_POST['identity'])) {
+        echo "<script>alert(\"Tous les champs sont obligatoires\")</script>";
+        return false;
+    }
+    if (empty($_FILES["identity"]) && $_FILES['identity']['name'] != "") {
+        echo "<script>alert(\"Pièce d'identité invalide\")</script>";
+        return false;
+    }
+    if (!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)) {
+        echo "<script>alert(\"Email invalide\")</script>";
+        return false;
+    }
+
     $fname = htmlentities($_POST['fname']);
     $lname = htmlentities($_POST['lname']);
     $email = htmlentities($_POST['email']);
@@ -23,7 +35,7 @@ if (empty($_POST['fname'])    ||
     $type_fichier = $_FILES['identity']['type'];
     $taille_fichier = $_FILES['identity']['size'];
 
-
+    $_POST = array();
 
     /**
      * CREATE THE EMAIL AND SEND IT
@@ -35,10 +47,11 @@ if (empty($_POST['fname'])    ||
      * 6: Creation of the message
      * 7: Sending the email
      */
+
     $mail = 'job@lockarting.fr'; // For everyone
     $mail .= ', sabinecaizergues@gmail.com'; // Add for debugging.
 
-    $subject = "[JOB CANDIDAT] www.lockarting.fr";
+    $subject = "JOB CANDIDAT - www.lockarting.fr";
     $boundary = md5(rand()); // clé aléatoire de limite
 
     function clean_string($string) {
@@ -55,9 +68,9 @@ if (empty($_POST['fname'])    ||
     }
 
     $header = "From: \"Loc'karting\"<noreply@lockarting.fr>" . $simple_passage_ligne;
-    $header .= "Reply-to: \"$email\" <$email>" . $simple_passage_ligne;
+    $header .= "Reply-to: \"" . $email . "\" <" . $email . ">" . $simple_passage_ligne;
     $header .= "MIME-Version: 1.0" . $simple_passage_ligne;
-    $header .= "Content-Type: text/plain; charset=\"ISO - 8859 - 1\"" . $simple_passage_ligne;
+    $header .= "Content-Type: text/plain; charset=\"ISO-8859-1\"" . $simple_passage_ligne;
 //    $header .= "Content-Transfer-Encoding: 8bit" . $simple_passage_ligne;
 
     //Contenu du message (alternative pour deux versions ex:text/plain et text/html
@@ -77,13 +90,10 @@ if (empty($_POST['fname'])    ||
         $message_txt .= "La pièce d'identité du candidat se trouve en pièce jointe." . $simple_passage_ligne;
     }
 
-
     $email_message = '--' . $boundary . $simple_passage_ligne; //Séparateur d'ouverture
     $email_message .= "Content-Type: text/plain; charset=\"utf-8\"" . $simple_passage_ligne; //Type du contenu
     $email_message .= "Content-Transfer-Encoding: 8bit" . $simple_passage_ligne; //Encodage
     $email_message .= $simple_passage_ligne .clean_string($message_txt). $simple_passage_ligne; //Contenu du message
-
-
 
     if($nom_fichier != ".htaccess"){ //Vérifie que ce n'est pas un .htaccess
         if($type_fichier == "image/jpeg"
@@ -119,10 +129,12 @@ if (empty($_POST['fname'])    ||
     }
     $email_message .= $simple_passage_ligne . "--" . $boundary . "--" . $simple_passage_ligne; //Séparateur de fermeture
 
-
-
 //    $email_body = $message_txt . $simple_passage_ligne;
 
-    mail($mail, $subject, $email_message, $header);
-    return true;
+    if (mail($mail, $subject, $email_message, $header)) {
+        echo "<script>alert(\"Candidature transmise !\")</script>";
+        return true;
+    }
+    echo "<script>alert(\"Une erreur est survenue, merci de réessayer plus tard\")</script>";
+    return false;
 }

@@ -80,6 +80,14 @@
 </head>
 
 <body class="off-canvas-sidebar">
+<!--FORM-->
+<?php
+include "../php/iWantAJob.php";
+if (manageJobInscription()) {
+    // To empty the form ...
+    $_POST = array();
+}
+?>
 <!--NAV-->
 <?php include "../php/partials/navbar.php" ?>
 
@@ -122,7 +130,6 @@
                     <form id="jobForm"
                           class="jobForm"
                           method="POST"
-                          action="/assets/js/iWantAJob.js"
                           accept-charset="UTF-8"
                     >
                         <div class="card-header card-header-warning text-center">
@@ -137,7 +144,7 @@
                                 </span>
                                 </div>
                                 <input id="fname" name="fname" required
-                                       type="text" class="form-control" placeholder="Prénom...">
+                                       type="text" class="form-control" placeholder="Prénom..." value="<?php if (isset($_POST)) echo $_POST['fname']; ?>">
                             </div>
 
 <!--                            nom-->
@@ -148,7 +155,7 @@
                                 </span>
                                 </div>
                                 <input id="lname" name="lname" required
-                                       type="text" class="form-control" placeholder="Nom...">
+                                       type="text" class="form-control" placeholder="Nom..." value="<?php if (isset($_POST)) echo $_POST['lname']; ?>">
                             </div>
 
 <!--                            mail-->
@@ -159,7 +166,7 @@
                                 </span>
                                 </div>
                                 <input id="email" name="email" required
-                                       type="email" class="form-control" placeholder="Email...">
+                                       type="email" class="form-control" placeholder="Email..." value="<?php if (isset($_POST)) echo $_POST['email']; ?>">
                             </div>
 
 <!--                            telephone-->
@@ -170,7 +177,7 @@
                                 </span>
                                 </div>
                                 <input id="phone" name="phone" required
-                                       type="tel" class="form-control" placeholder="Téléphone...">
+                                       type="tel" class="form-control" placeholder="Téléphone..." value="<?php if (isset($_POST)) echo $_POST['phone']; ?>">
                             </div>
 
 <!--                            vehicule-->
@@ -182,8 +189,8 @@
                                 </div>
                                 <div class="togglebutton">
                                     <label>
-                                        <input id="car" name="car" required
-                                               type="checkbox">
+                                        <input id="car" name="car"
+                                               type="checkbox" <?php if (isset($_POST) && $_POST['car']) echo 'checked'; ?>>
                                         <span class="toggle"></span>
                                         Je suis véhiculé
                                     </label>
@@ -198,7 +205,7 @@
                                 </div>
                                 <label>
                                     <input id="birth" name="birth" required
-                                           type="date" class="form-control" placeholder="Date de Naissance...">
+                                           type="date" class="form-control" placeholder="Date de Naissance..." value="<?php if (isset($_POST)) echo $_POST['birth']; ?>">
                                     Date de naissance
                                 </label>
                             </div>
@@ -211,13 +218,13 @@
                                 </div>
                                 <label for="identity">
                                     <input id="identity" name="identity" required
-                                           type="file" class="form-control"">
+                                           type="file" class="form-control">
                                     Passeport ou CNI...
                                 </label>
                             </div>
                             <div class="input-group">
                                 <div id="success-mail"></div>
-                                <input type="submit" class="btn btn-success btn-wd btn-lg" value="Je Postule !" />
+                                <input type="submit" name="submitForm" class="btn btn-success btn-wd btn-lg" value="Je Postule !" />
                             </div>
 
 
