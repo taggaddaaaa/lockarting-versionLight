@@ -1,3 +1,10 @@
+<?php
+include "../php/iWantAJob.php";
+if (manageJobInscription()) {
+    // To empty the form ...
+    header('Location: https://www.lockarting.fr');
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -80,14 +87,7 @@
 </head>
 
 <body class="off-canvas-sidebar">
-<!--FORM-->
-<?php
-include "../php/iWantAJob.php";
-if (manageJobInscription()) {
-    // To empty the form ...
-    $_POST = array();
-}
-?>
+
 <!--NAV-->
 <?php include "../php/partials/navbar.php" ?>
 
@@ -190,7 +190,7 @@ if (manageJobInscription()) {
                                 <div class="togglebutton">
                                     <label>
                                         <input id="car" name="car"
-                                               type="checkbox" <?php if (isset($_POST) && $_POST['car']) echo 'checked'; ?>
+                                               type="checkbox" <?php if (isset($_POST) && $_POST['car']) echo 'checked'; ?> >
                                         <span class="toggle"></span>
                                         Je suis véhiculé
                                     </label>
@@ -212,18 +212,18 @@ if (manageJobInscription()) {
                             </div>
 
 <!--                            CNI-->
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                      <i class="material-icons">wallpaper</i>
-                                    </span>
-                                </div>
-                                <label for="identity">
-                                    <input id="identity" name="identity" required
-                                           type="file" class="form-control">
-                                    Passeport ou CNI...
-                                </label>
-                            </div>
+<!--                            <div class="input-group">-->
+<!--                                <div class="input-group-prepend">-->
+<!--                                    <span class="input-group-text">-->
+<!--                                      <i class="material-icons">wallpaper</i>-->
+<!--                                    </span>-->
+<!--                                </div>-->
+<!--                                <label for="identity">-->
+<!--                                    <input id="identity" name="identity" required-->
+<!--                                           type="file" class="form-control">-->
+<!--                                    Passeport ou CNI...-->
+<!--                                </label>-->
+<!--                            </div>-->
 
 <!--                            SUBMIT-->
                             <div class="input-group">
