@@ -14,7 +14,7 @@
 
 	<!-- Search Engine -->
 	<meta name="robots" content="follow">
-	<meta name="image" content="https://lockarting.fr/assets/img/iphone.png">
+	<meta name="image" content="https://lockarting.fr/assets/img/dlApp.png">
 	<meta name="keywords" content="inscription application mobile, app karting, register karting, register app,
      karting, circuit de karting, piste de karting, karting à Montpellier, karting Pérols, kart 34, karting 34,
      enterrement de vie de garçon, enterrement de vie de fille, incentive, chrono, sensation forte">
@@ -29,7 +29,7 @@
 	      Téléchargez l'application mobile pour garder l'historique de vos chronos.
 	      Partagez-les avec vos amis et gagnez des Kartcoins à chaque course terminée."
 	>
-	<meta itemprop="image" content="https://lockarting.fr/assets/img/iphone.png">
+	<meta itemprop="image" content="https://lockarting.fr/assets/img/dlApp.png">
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary">
@@ -41,7 +41,7 @@
 	      Partagez-les avec vos amis et gagnez des Kartcoins à chaque course terminée."
 	>
 	<meta name="twitter:creator" content="@taggaddaaaa">
-	<meta name="twitter:image:src" content="https://lockarting.fr/assets/img/iphone.png">
+	<meta name="twitter:image:src" content="https://lockarting.fr/assets/img/dlApp.png">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Loc'karting - L'application mobile pour les Pilotes du circuit."/>
@@ -49,7 +49,7 @@
 	<meta property="og:url" content="https://www.lockarting.fr/application"/>
 	<meta property="og:image:width" content="203">
 	<meta property="og:image:height" content="203">
-	<meta property="og:image" content="https://www.lockarting.fr/assets/img/iphone.png">
+	<meta property="og:image" content="https://www.lockarting.fr/assets/img/dlApp.png">
 	<meta property="og:description"
 	      content="À partir de 7 ans, en famille, ou entre amis, Venez défier le chrono sur le circuit mythique de Pérols.
 	      Téléchargez l'application mobile pour garder l'historique de vos chronos.
