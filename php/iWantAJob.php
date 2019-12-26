@@ -22,7 +22,7 @@ function manageJobInscription() {
      * CREATE THE EMAIL AND SEND IT
      */
     $mail = 'job@lockarting.fr'; // For everyone
-    $mail .= ', sabinecaizergues@gmail.com'; // Add for debugging.
+//    $mail .= ', sabinecaizergues@gmail.com'; // Add for debugging.
 
     $subject = "[JOB CANDIDAT] www.lockarting.fr";
 //    $boundary = md5(rand()); // clé aléatoire de limite
