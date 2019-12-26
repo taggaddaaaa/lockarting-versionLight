@@ -58,8 +58,9 @@ switch ($numMonth) {
 
 
 }
-
-$imgOfTheMonth = "/assets/img/schedule/mensuel2019/$month.png";
+//TODO change this equality in january 2020 for :
+//$imgOfTheMonth = "/assets/img/schedule/mensuel2020/$month.png";
+$imgOfTheMonth = $numMonth === 12 ? "/assets/img/schedule/mensuel2019/$month.png" : "/assets/img/schedule/mensuel2020/$month.png";
 ?>
 
 <div class="modal-body">
@@ -98,12 +99,12 @@ $imgOfTheMonth = "/assets/img/schedule/mensuel2019/$month.png";
 			<strong style="color: darkred;">Télécharger l'image</strong>
 		</a>
 	</p>
-	<p>Vous pouvez également
-		<a href="/assets/img/schedule/calendrier2019.png" download="calendrier2019Lockarting">
-			<strong style="color: darkred;">télécharger le calendrier annuel </strong>
-		</a>
-		des horaires du circuit.
-	</p>
+<!--	<p>Vous pouvez également-->
+<!--		<a href="/assets/img/schedule/calendrier2019.png" download="calendrier2019Lockarting">-->
+<!--			<strong style="color: darkred;">télécharger le calendrier annuel </strong>-->
+<!--		</a>-->
+<!--		des horaires du circuit.-->
+<!--	</p>-->
 
 	<br>
 	<br>
