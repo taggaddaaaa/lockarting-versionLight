@@ -58,12 +58,13 @@ switch ($numMonth) {
 
 
 }
+//TODO change this equality in january 2020 for :
 $imgOfTheMonth = "/assets/img/schedule/mensuel2020/$month.png";
 //$imgOfTheMonth = ($numMonth == 12) ? "/assets/img/schedule/mensuel2019/$month.png" : "/assets/img/schedule/mensuel2020/$month.png";
 ?>
 
 <div class="modal-body">
-	<h2>Horaires <?= $month ?> 2019</h2>
+	<h2>Horaires <?= $month ?> 2020</h2>
 	<p class="item-intro text-muted">Est-ce que votre circuit préféré est ouvert?</p>
 
 	<?php if (isset($dateHolidays)) : ?>
@@ -83,7 +84,14 @@ $imgOfTheMonth = "/assets/img/schedule/mensuel2020/$month.png";
 	<?php else : ?>
         <img class="img-responsive img-centered" style="width: 20%;" src="/assets/img/horloge.jpg"
              alt="horloge">
-        <p>En <?=$month?>, le circuit est ouvert <?= $dateTime?></p>
+        <p>En <?=$month?>, le circuit est
+            <!-- Rajout d'une condition pour le mois de janvier s'il y a une fermeture annuelle -->
+            <?php if ($numMonth != 1) {
+                echo "ouvert" + $dateTime;
+            } else {
+                echo "fermé pour congé annuel jusqu'au 04 février 2020 inclus.";
+            } ?>
+        </p>
 	<?php endif; ?>
 
 	<br>
