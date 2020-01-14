@@ -567,7 +567,7 @@
                                 frameborder="0" style="border:0;" allowfullscreen></iframe>
 
                         <h3>Notre adresse:</h3>
-                        <p itemscope itemtype="http://schema.org/PostalAddress">
+                        <p itemscope itemtype="PostalAddress">
                             <strong>
                                 <span itemprop="name">Loc'karting, </span>
                                 <span itemprop="streetAddress">Route Departementale 172, Lieu-dit La Pailletrice, </span>
