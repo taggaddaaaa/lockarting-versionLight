@@ -58,9 +58,8 @@ switch ($numMonth) {
 
 
 }
-//TODO change this equality in january 2020 for :
-//$imgOfTheMonth = "/assets/img/schedule/mensuel2020/$month.png";
-$imgOfTheMonth = ($numMonth == 12) ? "/assets/img/schedule/mensuel2019/$month.png" : "/assets/img/schedule/mensuel2020/$month.png";
+$imgOfTheMonth = "/assets/img/schedule/mensuel2020/$month.png";
+//$imgOfTheMonth = ($numMonth == 12) ? "/assets/img/schedule/mensuel2019/$month.png" : "/assets/img/schedule/mensuel2020/$month.png";
 ?>
 
 <div class="modal-body">
