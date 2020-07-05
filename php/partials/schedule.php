@@ -82,14 +82,7 @@ $imgOfTheMonth = "/assets/img/schedule/mensuel2020/$month.png";
 	<?php else : ?>
         <img class="img-responsive img-centered" style="width: 20%;" src="/assets/img/horloge.jpg"
              alt="horloge">
-        <p>En <?=$month?>, le circuit est
-            <!-- Rajout d'une condition pour le mois de janvier s'il y a une fermeture annuelle -->
-            <?php if ($numMonth !== 1) {
-                echo "ouvert" + $dateTime;
-            } else {
-                echo "fermé pour congé annuel jusqu'au 04 février 2020 inclus.";
-            } ?>
-        </p>
+        <p>En <?=$month?>, le circuit est ouvert <?=$dateTime?></p>
 	<?php endif; ?>
 
 	<br>
