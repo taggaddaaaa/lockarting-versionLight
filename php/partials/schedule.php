@@ -28,7 +28,7 @@ switch ($numMonth) {
 		break;
 	case 7:
 		$month = "Juillet";
-		$dateTime = "tous les jours de 10h00 à 19h00 la première semaine de $month. Puis, tous les jours de 10h00 du matin à 01h00 du matin.";
+		$dateTime = "tous les jours de 10h00 à 23h00 la première semaine de $month. Puis, tous les jours de 10h00 du matin à 01h00 du matin.";
 		break;
 	case 8:
 		$month = "Août";
@@ -52,15 +52,13 @@ switch ($numMonth) {
 		$month = "Décembre";
 		$dateTime = "du mercredi au dimanche, de 14h00 à 18h00.";
 		$dateHolidays = "tous les jours de 14h00 à 18h00.";
-		$christmasWarning = "ATTENTION: veuillez-nous appeler pour confirmer les horaires du 24 et du 31 décembre. 
+		$christmasWarning = "ATTENTION: veuillez-nous appeler pour confirmer les horaires du 24 et du 31 décembre.
 		Et nous serons également fermé le 25 et le 31 deécembre. Passez de bonnes et heureuses fêtes de fin d'année!";
 		break;
-
-
 }
-//TODO change this equality in january 2020 for :
+
+
 $imgOfTheMonth = "/assets/img/schedule/mensuel2020/$month.png";
-//$imgOfTheMonth = ($numMonth == 12) ? "/assets/img/schedule/mensuel2019/$month.png" : "/assets/img/schedule/mensuel2020/$month.png";
 ?>
 
 <div class="modal-body">
@@ -71,7 +69,7 @@ $imgOfTheMonth = "/assets/img/schedule/mensuel2020/$month.png";
         <h3>Horaires HORS Vacances Scolaires</h3>
         <img class="img-responsive img-centered" style="width: 20%;" src="/assets/img/ecole1.jpg"
              alt="hors vacances scolaires">
-        <p>En <?=$month?>, le circuit est ouvert <?= $dateTime?></p>
+        <p>En <?=$month?>, le circuit est ouvert <?=$dateTime?></p>
 
         <br>
 
@@ -86,7 +84,7 @@ $imgOfTheMonth = "/assets/img/schedule/mensuel2020/$month.png";
              alt="horloge">
         <p>En <?=$month?>, le circuit est
             <!-- Rajout d'une condition pour le mois de janvier s'il y a une fermeture annuelle -->
-            <?php if ($numMonth != 1) {
+            <?php if ($numMonth !== 1) {
                 echo "ouvert" + $dateTime;
             } else {
                 echo "fermé pour congé annuel jusqu'au 04 février 2020 inclus.";
@@ -106,12 +104,6 @@ $imgOfTheMonth = "/assets/img/schedule/mensuel2020/$month.png";
 			<strong style="color: darkred;">Télécharger l'image</strong>
 		</a>
 	</p>
-<!--	<p>Vous pouvez également-->
-<!--		<a href="/assets/img/schedule/calendrier2019.png" download="calendrier2019Lockarting">-->
-<!--			<strong style="color: darkred;">télécharger le calendrier annuel </strong>-->
-<!--		</a>-->
-<!--		des horaires du circuit.-->
-<!--	</p>-->
 
 	<br>
 	<br>
