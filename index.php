@@ -735,11 +735,11 @@
                                     </tr>
                                     <tr>
                                         <!-- td from rowspan -->
-                                        <th class="column">de 6 à 18 pers.</th>
+                                        <th class="column">de 10 à 18 pers.</th>
                                         <th class="column">de 19 à 38 pers.</th>
-                                        <th class="column">de 6 à 18 pers.</th>
+                                        <th class="column">de 10 à 18 pers.</th>
                                         <th class="column">de 19 à 38 pers.</th>
-                                        <th class="column">de 6 à 18 pers.</th>
+                                        <th class="column">de 10 à 18 pers.</th>
                                         <th>de 19 à 38 pers.</th>
                                         <!-- td from rowspan -->
                                     </tr>
