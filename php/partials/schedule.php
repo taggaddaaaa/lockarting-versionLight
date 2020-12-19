@@ -53,7 +53,7 @@ switch ($numMonth) {
 		$dateTime = "du mercredi au dimanche, de 14h00 à 18h00.";
 		$dateHolidays = "tous les jours de 14h00 à 18h00.";
 		$christmasWarning = "ATTENTION: veuillez-nous appeler pour confirmer les horaires du 24 et du 31 décembre.
-		Et nous serons également fermé le 25 et le 31 deécembre. Passez de bonnes et heureuses fêtes de fin d'année!";
+		Et nous serons également fermés le 25 et le 31 décembre. Passez de bonnes et heureuses fêtes de fin d'année!";
 		break;
 }
 
