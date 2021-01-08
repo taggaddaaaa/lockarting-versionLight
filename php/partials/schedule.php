@@ -4,7 +4,7 @@ $numMonth = date("n");
 switch ($numMonth) {
 	case 1 :
 		$month = "Janvier";
-		$dateTime = "seulement le week-end de 14h00 à 18h00.";
+		$dateTime = "à partir du samedi 16, les week-end de 10h00 à 18h00";
 		break;
 	case 2:
 		$month = "Février";
@@ -62,7 +62,7 @@ $imgOfTheMonth = "/assets/img/schedule/mensuel2020/$month.png";
 ?>
 
 <div class="modal-body">
-	<h2>Horaires <?= $month ?> 2020</h2>
+	<h2>Horaires <?= $month ?> 2021</h2>
 	<p class="item-intro text-muted">Est-ce que votre circuit préféré est ouvert?</p>
 
 	<?php if (isset($dateHolidays)) : ?>
@@ -93,7 +93,7 @@ $imgOfTheMonth = "/assets/img/schedule/mensuel2020/$month.png";
 	     alt="horaires d'ouverture du circuit pour le mois de <?=$month?>"
 	>
 	<p>Pour les plus visuels d'entre nous! &#x1F609;
-		<a href="<?=$imgOfTheMonth?>" download="<?=$month?>Lockarting">
+	    <a href="<?=$imgOfTheMonth?>" download="<?=$month?>Lockarting">
 			<strong style="color: darkred;">Télécharger l'image</strong>
 		</a>
 	</p>
