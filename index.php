@@ -506,17 +506,17 @@
         <div class="row">
             <div class="col-sm-4">
                     <span class="copyright">Copyright &copy;
-                        <a target="_blank" href="https://www.linkedin.com/in/taggaddaaaa"
-                        >Taggaddaaaa</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/sabinecaizergues"
+                        >Sabine Caizergues</a>
                         <br>TOUS DROITS RESERVES
                     </span>
             </div>
 
             <div class="col-sm-4">
                 <ul class="social">
-                    <li class="facebook"><a target="_blank" href="https://facebook.com/circuit.lockarting"><i class="fa fa-facebook fa-3x"></i></a></li>
+                    <li class="facebook"><a target="_blank" href="https://facebook.com/lockarting34"><i class="fa fa-facebook fa-3x"></i></a></li>
                     <li class="instagram"><a target="_blank" href="https://www.instagram.com/lockarting34"><i class="fa fa-instagram fa-3x"></i></a></li>
-                    <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/11171242/"><i class="fa fa-linkedin fa-3x"></i></a></li>
+                    <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/lockarting34/"><i class="fa fa-linkedin fa-3x"></i></a></li>
                 </ul>
             </div>
 

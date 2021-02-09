@@ -6,5 +6,5 @@
 	Fait avec
 	<i style="font-size: 1rem;" class="material-icons">favorite</i>
 	par
-	<a class="text-info" href="https://www.linkedin.com/in/taggaddaaaa/" target="_blank"><b>Sabine Caizergues</b></a>.
+	<a class="text-info" href="https://www.linkedin.com/in/sabinecaizergues/" target="_blank"><b>Sabine Caizergues</b></a>.
 </div>

@@ -121,11 +121,11 @@
                                          <br/>
                                         Le créateur du site est : <strong>Sabine Caizergues</strong><br/>
                                         Le responsable de la  publication est : <strong>Sabine Caizergues</strong><br/>
-                                        Contactez le responsable de la publication : <strong><a href="mailto:taggaddaaaawebstudio@gmail.com">taggaddaaaawebstudio@gmail.com</a></strong><br/>
+                                        Contactez le responsable de la publication : <strong><a href="mailto:sabinecaizergues@gmail.com">sabinecaizergues@gmail.com</a></strong><br/>
                                         Le responsable de la publication est une <strong>personne physique</strong><br/>
                                         <br/>
                                         Le webmaster est  : <strong>Sabine Caizergues</strong><br/>
-                                        Contactez le webmaster : <strong><a href="mailto:taggaddaaaawebstudio@gmail.com?subject=Contact à partir des mentions légales via le site www.lockarting.fr">taggaddaaaawebstudio@gmail.com</a></strong><br/>
+                                        Contactez le webmaster : <strong><a href="mailto:sabinecaizergues@gmail.com?subject=Contact à partir des mentions légales via le site www.lockarting.fr">sabinecaizergues@gmail.com</a></strong><br/>
                                         L?hébergeur du site est : <strong>Ovh 2 rue Kellermann 59100 Roubaix</strong>
                                     </p>
 

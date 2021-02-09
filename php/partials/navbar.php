@@ -19,7 +19,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a target="_blank" href="https://facebook.com/circuit.lockarting" class="nav-link">
+                    <a target="_blank" href="https://facebook.com/lockarting34" class="nav-link">
                         <i class="material-icons">face</i> Facebook
                     </a>
                 </li>
