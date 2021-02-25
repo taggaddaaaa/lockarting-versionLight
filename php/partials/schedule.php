@@ -8,15 +8,16 @@ switch ($numMonth) {
 		break;
 	case 2:
 		$month = "Février";
-		$dateTime = "du mercredi au dimanche, de 14h00 à 18h00.";
+		$dateTime = "du mercredi au vendredi, de 14h00 à 17h30 et les week-ends de 10h00 à 17h30.
+		Les vacances scolaires, nous sommes ouverts tous les jours de 10h00 à 17h30.";
 		break;
 	case 3 :
 		$month = "Mars";
-		$dateTime = "du mercredi au dimanche, de 14h00 à 18h00.";
+		$dateTime = "du mercredi au vendredi, de 14h00 à 17h30 et les week-ends de 10h00 à 17h30.";
 		break;
 	case 4:
 		$month = "Avril";
-		$dateTime = "du mercredi au dimanche, de 10h00 à 19h00.";
+		$dateTime = "du mercredi au dimanche, de 10h00 à 19h00, ainsi que tous les jours des vacances scolaires.";
 		break;
 	case 5:
 		$month = "Mai";
@@ -45,7 +46,7 @@ switch ($numMonth) {
 		break;
 	case 11 :
 		$month = "Novembre";
-		$dateTime = "du mercredi au vendredi de 14h00 à 18h00. Le week-end de 10h00 à 18h00 sauf le 30 novembre: 14h00 à 18h00.";
+		$dateTime = "du mercredi au vendredi de 14h00 à 18h00. Le week-end de 10h00 à 19h00.";
 		$dateHolidays = "tous les jours de 10h00 à 19h00.";
 		break;
 	case 12 :
@@ -58,12 +59,16 @@ switch ($numMonth) {
 }
 
 
-$imgOfTheMonth = "/assets/img/schedule/mensuel2020/$month.png";
+$imgOfTheMonth = "/assets/img/schedule/mensuel2021/$month.png";
 ?>
 
 <div class="modal-body">
 	<h2>Horaires <?= $month ?> 2021</h2>
 	<p class="item-intro text-muted">Est-ce que votre circuit préféré est ouvert?</p>
+
+	<strong style="color: darkred;">Attention : les heures annoncées peuvent changer suivant les annonces du
+	gouvernement. Si vous avez un doute, n'hésitez pas à nous appeler ou à nous écrire sur Messenger.
+	</strong>
 
 	<?php if (isset($dateHolidays)) : ?>
         <h3>Horaires HORS Vacances Scolaires</h3>
