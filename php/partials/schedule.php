@@ -13,11 +13,11 @@ switch ($numMonth) {
 		break;
 	case 3 :
 		$month = "Mars";
-		$dateTime = "du mercredi au vendredi, de 14h00 à 17h30 et les week-ends de 10h00 à 17h30.";
+		$dateTime = "du mercredi au vendredi, de 14h00 à 18h30 et les week-ends de 10h00 à 18h30.";
 		break;
 	case 4:
 		$month = "Avril";
-		$dateTime = "du mercredi au dimanche, de 10h00 à 19h00, ainsi que tous les jours des vacances scolaires.";
+		$dateTime = "du mercredi au dimanche, de 10h00 à 18h30, ainsi que tous les jours des vacances scolaires.";
 		break;
 	case 5:
 		$month = "Mai";
@@ -59,11 +59,32 @@ switch ($numMonth) {
 }
 
 
-$imgOfTheMonth = "/assets/img/schedule/mensuel2021/$month.png";
-?>
+//================================================================================================
+// ICI ON VA CHECKER QUE NOUS AVONS BIEN LES RESSOURCES GRAPHIQUES AVEC LA VARIABLE CHECK
+// POUR AFFICHER LES HORAIRES OU UN MESSAGE D'EXCUSE DANS LE CODE
+//================================================================================================
+//Année en cours
+$year = gmdate('Y');
+
+//Message d'excuse
+$excuseMe = "Nous sommes désolés, nous sommes encore en cours de réflexion/conception ce qui explique que les horaires
+ d'ouverture ne sont pas encore affichés ici mais vous pouvez nous joindre par téléphone ou messenger.";
+
+//fichier que nous souhaitons afficher pour la date en cours
+$imgOfTheMonthOfTheActualYear = "https://lockarting.fr/assets/img/schedule/mensuel$year/$month.png";
+
+//Ouvrir le fichier
+$check = @fopen($imgOfTheMonthOfTheActualYear,'r');
+
+//Verification que le fichier existe
+if (!$check) {
+
+ echo $excuseMe;
+
+} else { ?>
 
 <div class="modal-body">
-	<h2>Horaires <?= $month ?> 2021</h2>
+	<h2>Horaires <?= $month." ".$year ?></h2>
 	<p class="item-intro text-muted">Est-ce que votre circuit préféré est ouvert?</p>
 
 	<strong style="color: darkred;">Attention : les heures annoncées peuvent changer suivant les annonces du
@@ -94,11 +115,11 @@ $imgOfTheMonth = "/assets/img/schedule/mensuel2021/$month.png";
 
 	<h3>En Image Ca Donne Ca</h3>
 	<img class="img-responsive img-centered"
-	     src="<?=$imgOfTheMonth?>"
+	     src="<?=$imgOfTheMonthOfTheActualYear?>"
 	     alt="horaires d'ouverture du circuit pour le mois de <?=$month?>"
 	>
 	<p>Pour les plus visuels d'entre nous! &#x1F609;
-	    <a href="<?=$imgOfTheMonth?>" download="<?=$month?>Lockarting">
+	    <a href="<?=$imgOfTheMonthOfTheActualYear?>" download="<?=$month?>Lockarting">
 			<strong style="color: darkred;">Télécharger l'image</strong>
 		</a>
 	</p>
@@ -120,4 +141,6 @@ $imgOfTheMonth = "/assets/img/schedule/mensuel2021/$month.png";
 
 	<button type="button" class="btn btn-primary" data-dismiss="modal">Retour</button>
 </div>
+
+<?php } ?>
 
