@@ -33,13 +33,6 @@
                         <i class="material-icons">favorite</i> Votre avis
                     </a>
                 </li>
-                <?php if ($_SERVER[REQUEST_URI] != "/job/") { ?>
-                <li class="nav-item ">
-                    <a target="_blank" href="/index.php#contact" class="nav-link">
-                        <i class="material-icons">mail</i> Contact
-                    </a>
-                </li>
-                <?php } ?>
             </ul>
         </div>
     </div>
