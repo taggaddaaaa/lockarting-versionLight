@@ -22,7 +22,7 @@ switch ($numMonth) {
 	case 5:
 		$month = "Mai";
 		$dateTime = "du mercredi au dimanche, de 10h00 à 18h30, du 01 au 16 Mai.
-		Ainsi que du Mercredi au Dimanche et jour fériés de 10h00 à 20H00.";
+		Ainsi que du Mercredi au Dimanche et jour fériés de 10h00 à 20H00, du 19 au 30 Mai.";
 		break;
 	case 6:
 		$month = "Juin";
