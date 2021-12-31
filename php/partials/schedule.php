@@ -4,41 +4,42 @@ $numMonth = date("n");
 switch ($numMonth) {
 	case 1 :
 		$month = "Janvier";
-		$dateTime = "à partir du samedi 16, les week-end de 10h00 à 18h00";
+		$dateTime = "à partir du samedi 19, du mercredi au vendredi, de 14h00 à 18h00 et les week-ends de 10h00 à 18h00";
 		break;
 	case 2:
 		$month = "Février";
-		$dateTime = "du mercredi au vendredi, de 14h00 à 17h30 et les week-ends de 10h00 à 17h30.
-		Les vacances scolaires, nous sommes ouverts tous les jours de 10h00 à 17h30.";
+		$dateTime = "du mercredi au vendredi, de 14h00 à 18h00 et les week-ends de 10h00 à 18h00.
+		Les vacances scolaires, nous sommes ouverts tous les jours de 10h00 à 18h00.";
 		break;
 	case 3 :
 		$month = "Mars";
-		$dateTime = "du mercredi au vendredi, de 14h00 à 18h30 et les week-ends de 10h00 à 18h30.";
+		$dateTime = "du mercredi au vendredi, de 14h00 à 18h00 et les week-ends de 10h00 à 18h00.";
 		break;
 	case 4:
 		$month = "Avril";
-		$dateTime = "du mercredi au dimanche, de 10h00 à 18h30, ainsi que tous les jours des vacances scolaires.";
+		$dateTime = "du mercredi au dimanche, de 10h00 à 18h00, ainsi que tous les jours des vacances scolaires.";
 		break;
 	case 5:
 		$month = "Mai";
-		$dateTime = "du mercredi au dimanche, de 10h00 à 18h30, du 01 au 16 Mai.
-		Ainsi que du Mercredi au Dimanche et jour fériés de 10h00 à 20H00, du 19 au 30 Mai.";
+		$dateTime = "du mercredi au dimanche, de 10h00 à 18h30, du 01 au 15 Mai.
+		Ainsi que du Mercredi au Dimanche et jour fériés de 10h00 à 20H00, du 18 au 29 Mai.";
 		break;
 	case 6:
 		$month = "Juin";
-		$dateTime = "du mercredi au dimanche, de 10h00 à 20h00.";
+		$dateTime = "du Mercredi au Dimanche, de 10h00 à 20h00, du 01 au 24 Juin.
+		Ainsi que du Mercredi au Dimanche de 10h00 à 23H00, du 25 au 30 Juin.";
 		break;
 	case 7:
 		$month = "Juillet";
-		$dateTime = "tous les jours de 10h00 à 23h00 la première semaine de $month. Puis, tous les jours de 10h00 du matin à 01h00 du matin.";
+		$dateTime = "tous les jours de 10h00 à 23h00 du 01 au 08 $month. Puis, tous les jours de 10h00 du matin à 01h00 du matin.";
 		break;
 	case 8:
 		$month = "Août";
-		$dateTime = "tous les jours de 10h00 du matin à 01h00 du matin.";
+		$dateTime = "tous les jours de 10h00 du matin à 01h00 du matin du 01 au 28 $month, puis de 10h00 à 19h00.";
 		break;
 	case 9 :
 		$month = "Septembre";
-		$dateTime = "du mercredi au vendredi de 14h00 à 19h00. Le week-end de 10h00 à 19h00.";
+		$dateTime = "du mercredi au Dimanche de 10h00 à 19h00.";
 		break;
 	case 10 :
 		$month = "Octobre";
@@ -47,15 +48,17 @@ switch ($numMonth) {
 		break;
 	case 11 :
 		$month = "Novembre";
-		$dateTime = "du mercredi au vendredi de 14h00 à 18h00. Le week-end de 10h00 à 19h00.";
-		$dateHolidays = "tous les jours de 10h00 à 19h00.";
+		$dateTime = "du mercredi au vendredi de 14h00 à 18h00. Le week-end de 10h00 à 18h00.";
+		$dateHolidays = "tous les jours de 10h00 à 18h00.";
 		break;
 	case 12 :
 		$month = "Décembre";
-		$dateTime = "du mercredi au dimanche, de 14h00 à 18h00.";
-		$dateHolidays = "tous les jours de 14h00 à 18h00.";
+		$dateTime = "du mercredi au dimanche, de 14h00 à 18h00.
+		du 01 au 16 de 14h00 à 18h00 et du 17 au 30 de 10h00 à 18h00. Sauf le 24 et 31, où nous nous réservons
+		le droit de fermer plus tôt";
+		$dateHolidays = "tous les jours de 10h00 à 18h00.";
 		$christmasWarning = "ATTENTION: veuillez-nous appeler pour confirmer les horaires du 24 et du 31 décembre.
-		Et nous serons également fermés le 25 et le 31 décembre. Passez de bonnes et heureuses fêtes de fin d'année!";
+		Et nous serons également fermés le 25 et le 01 Janvier. Passez de bonnes et heureuses fêtes de fin d'année!";
 		break;
 }
 
