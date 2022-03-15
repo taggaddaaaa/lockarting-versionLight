@@ -536,7 +536,7 @@
 </div>
 
 <!------------------------------------------->
-<!--                MODALS                 -->
+<!--             MODALS HORAIRES           -->
 <!------------------------------------------->
 <!-- Infos pratiques HORAIRES -->
 <div class="modal fade" id="infosModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -552,6 +552,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
 						<?php include "php/partials/schedule.php" ?>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Retour</button>
                     </div>
                 </div>
             </div>
@@ -559,6 +560,9 @@
     </div>
 </div>
 
+<!------------------------------------------->
+<!--             MODALS VENIR              -->
+<!------------------------------------------->
 <!-- infos pratique modal VENIR -->
 <div class="modal fade" id="infosModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
@@ -572,51 +576,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>Venir au circuit</h2>
-                        <p class="item-intro text-muted">Toutes les routes mènent à Loc'karting!</p>
-
-                        <iframe class="img-responsive img-centered"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.3459489010183!2d3.94257695!3d43.57851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6a4d6857453ff%3A0x78691696a454ae4!2sLoc+Karting!5e0!3m2!1sfr!2sfr!4v1436459269574"
-                                frameborder="0" style="border:0;" allowfullscreen></iframe>
-
-                        <h3>Notre adresse:</h3>
-                        <p itemscope itemtype="PostalAddress">
-                            <strong>
-                                <span itemprop="name">Loc'karting, </span>
-                                <span itemprop="streetAddress">Route Departementale 172, Lieu-dit La Pailletrice, </span>
-                                <span itemprop="postalCode">34470 </span>
-                                <span itemprop="addressLocality">Pérols.</span>
-                            </strong>
-                        </p>
-
-                        <p>Si vous venez en <strong>voiture</strong>, nous vous conseillons d'utiliser votre GPS,
-                            par
-                            <a target="_blank"
-                               href="https://www.waze.com/livemap?zoom=17&lat=43.57892&lon=3.94289"
-                            >exemple WAZE.</a>
-                        </p>
-
-                        <p>Si vous venez en <strong>tram</strong>, nous vous conseillons d'utiliser
-                            <a target="_blank" href="http://tam.cartographie.pro/"> le site de la TAM</a>
-                        </p>
-                        <p>en renseignant l'arrêt ECOPOLE, sur la LIGNE 3, direction PÉROLS.</p>
-                        <p>Le circuit est à 600 mètres à pieds de l'arrêt.</p>
-
-                        <p>Si vous venez à <strong>pieds</strong>, nous vous conseillons d'utiliser
-                            <a target="_blank"
-                               href="https://www.google.fr/maps/dir//Loc+Karting,+Route+Departementale+172,
-                                   Lieu-dit+La+Pailletrice,+34470+P%C3%A9rols/@43.57851,3.9425769,17z/data=!4m13!1m4!
-                                   3m3!1s0x12b6a4d6857453ff:0x78691696a454ae4!2sLoc+Karting!3b1!4m7!1m0!1m5!1m1!1s0x12
-                                   b6a4d6857453ff:0x78691696a454ae4!2m2!1d3.9426138!2d43.5785184"
-                            >GOOGLE MAPS</a>, en renseignant votre point de départ.
-                        </p>
-
-                        <p>Si vous venez en <strong>avion</strong> (veinard!), posez-vous à
-                            <a target="_blank" href="http://www.montpellier.aeroport.fr/fr/passagers"
-                            >l'aéroport de Montpellier Méditérannée. </a>
-                            Nous sommes tout à côté!
-                        </p>
-
+                        <?php include "php/partials/coming.php" ?>
                         <button type="button" class="btn btn-primary" data-dismiss="modal">Retour</button>
                     </div>
                 </div>
@@ -625,6 +585,9 @@
     </div>
 </div>
 
+<!------------------------------------------->
+<!--             MODALS TARIFS             -->
+<!------------------------------------------->
 <!-- Infos pratiques Modal Tarifs -->
 <div class="modal fade" id="infosModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
@@ -638,176 +601,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-
-                        <h2>Tarifs</h2>
-                        <p class="item-intro text-muted">Vous trouverez-ici nos tarifs location tout public.
-                            Contactez-nous pour un devis personnalisé.
-                        </p>
-
-                        <img class="img-responsive img-centered" src="/assets/img/cochon.jpg" alt="Tirelire en cochon">
-
-                        <div class="row">
-                            <p>Nos séances de location durent <strong>10 minutes</strong> et sont encadrées par un
-                                moniteur
-                                BPJEPS qui vous dispense un briefing sécurité.
-                            </p>
-                            <p>Loc'karting vous fournit casques, charlottes, et minerves pour les plus jeunes.</p>
-                            <p>Un système de chronométrage informatisé vous permet de visualiser vos performances sur
-                                écran plat.</p>
-                            <p><strong>Mini 160cc: </strong>à partir de 7 ans jusqu'à 13 ans, minimum 1 mètre 30.</p>
-                            <p><strong>Elite : </strong>à partir de 14 ans.</p>
-                            <p><strong>Bi-place : </strong>permet à un adulte de piloter le karting avec à ses côtés,
-                                un enfant ou une autre personne.
-                            </p>
-                            <p><strong>Handikart :</strong> avec ses commandes au volant, il permet le pilotage
-                                du karting pour certains types de handicaps.
-                            </p>
-                        </div>
-
-                        <div class="row">
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-condensed">
-                                    <thead>
-                                    <tr>
-                                        <th class="active">Séries de 10 minutes</th>
-
-                                        <th class="active">Mini Kart 160cc</th>
-
-                                        <th class="active">Kart Elite 270cc</th>
-
-                                        <th class="active">Kart Bi-place</th>
-
-                                        <th class="active">Handikart</th>
-
-                                    </tr>
-                                    </thead>
-
-                                    <tbody>
-                                    <tr>
-                                        <td>1 série de 10 minutes</td>
-
-                                        <td>15,00 &#8364;</td>
-
-                                        <td>19,00 &#8364;</td>
-
-                                        <td>25,00 &#8364;</td>
-
-                                        <td>22,00 &#8364;</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>2 s&#233;ries de 10 minutes</td>
-
-                                        <td>28,00 &#8364;</td>
-
-                                        <td>35,00 &#8364;</td>
-
-                                        <td>46,00 &#8364;</td>
-
-                                        <td>-</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>12 s&#233;ries de 10 minutes</td>
-
-                                        <td>145,00 &#8364;</td>
-
-                                        <td>190,00 &#8364;</td>
-
-                                        <td>-</td>
-
-                                        <td>-</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-condensed">
-                                    <thead>
-                                    <tr>
-                                        <th class="active" rowspan="2">Formules</th>
-                                        <th class="active" colspan="2">GP 1</th>
-                                        <th class="active" colspan="2">GP 2</th>
-                                        <th class="active" colspan="2">GP 3</th>
-                                        <th class="active" rowspan="2">Anniversaires</th>
-                                    </tr>
-                                    <tr>
-                                        <!-- td from rowspan -->
-                                        <th class="column">de 10 à 18 pers.</th>
-                                        <th class="column">de 19 à 38 pers.</th>
-                                        <th class="column">de 10 à 18 pers.</th>
-                                        <th class="column">de 19 à 38 pers.</th>
-                                        <th class="column">de 10 à 18 pers.</th>
-                                        <th>de 19 à 38 pers.</th>
-                                        <!-- td from rowspan -->
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>Tarifs</td>
-
-                                        <td>48,00 &#8364;/pers</td>
-                                        <td>45,00 &#8364;/pers</td>
-
-                                        <td>57,00 &#8364;/pers</td>
-                                        <td>54,00 &#8364;/pers</td>
-
-                                        <td>63,00 &#8364;/pers</td>
-                                        <td>59,00 &#8364;/pers</td>
-
-                                        <td>30,00 &#8364;/enfant</td>
-
-                                    </tr>
-
-                                    <tr>
-                                        <td>Temps de roulage</td>
-                                        <td colspan="2">10 min d'essai/qualif <br>+<br>15 min de course</td>
-                                        <td colspan="2">10 min d'essai <br>+<br>10 min de qualif <br>+<br>10 min de
-                                            course
-                                        </td>
-                                        <td colspan="2">10 min d'essai<br>+<br>10 min de qualif<br>+<br>15 min de course
-                                        </td>
-                                        <td>2 sessions de 10 min</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Formule comprenant</td>
-                                        <td colspan="6">Podium</td>
-                                        <td>Gâteau <br>+<br> bonbons <br>+<br> boissons <br>+<br>diplôme<br>+<br> podium
-                                            <br>+<br>1 médaille
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <p><strong>Pour la FORMULE ANNIVERSAIRE</strong>: nous prenons les réservations par
-                                téléphone
-                                ou mail A PARTIR DE 6 PARTICIPANTS minimum. La formule anniversaire comprend bien
-                                sûr du karting! : 2x 10minutes de karting 160CC ainsi qu'un gâteau, des bonbons,
-                                des boissons, la remise des diplômes de pilote de karting pour chaque enfant sur le
-                                podium et une médaille pour la star de la journée! 30 &#8364;/enfant.
-                            </p>
-                            <br>
-                            <p>Pour un tarif de groupe de plus de 14 personnes, CE, accueil d'entreprise, EDV de jeune
-                                fille ou garçon,
-                                <a href="#contact"> veuillez-nous faire une demande</a> et fermez cette fenêtre.
-                            </p>
-                        </div>
-
-                        <div class="row">
-                            <img src="/assets/img/paiements-acceptes.png" alt="type de paiements acceptés">
-                            <p>
-                                <strong>Nous acceptons les espèces en euros, les cartes bancaires CB, VISA et Mastercard ainsi que les chèques vacances ANCV.</strong>
-                                Malheureusement, nous n'acceptons plus les chèques bancaires.
-                            </p>
-                        </div>
-
+                        <?php include "php/partials/prices.php" ?>
                         <button type="button" class="btn btn-primary" data-dismiss="modal">Retour</button>
                     </div>
                 </div>

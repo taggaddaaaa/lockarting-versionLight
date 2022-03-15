@@ -86,8 +86,6 @@ if (!$check) {
  echo $excuseMe;
 
 } else { ?>
-
-<div class="modal-body">
 	<h2>Horaires <?= $month." ".$year ?></h2>
 	<p class="item-intro text-muted">Est-ce que votre circuit préféré est ouvert?</p>
 
@@ -142,9 +140,6 @@ if (!$check) {
 			<a style="color: darkred;" href="tel:0467170342" title="0467170342" itemprop="telephone">04.67.17.03.42</a>
 		</i>
 	</p>
-
-	<button type="button" class="btn btn-primary" data-dismiss="modal">Retour</button>
-</div>
 
 <?php } ?>
 
