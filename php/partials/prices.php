@@ -60,7 +60,7 @@
 
                 <th class="active">Kart Bi-place</th>
 
-                <th class="active">Handikart</th>
+                <!--<th class="active">Handikart</th>-->
             </tr>
             </thead>
 
@@ -68,37 +68,37 @@
             <tr>
                 <td>1 série de 10 minutes</td>
 
-                <td>15,00 &#8364;</td>
+                <td>17,00 &#8364;</td>
 
-                <td>19,00 &#8364;</td>
+                <td>21,00 &#8364;</td>
 
-                <td>25,00 &#8364;</td>
+                <td>28,00 &#8364;</td>
 
-                <td>22,00 &#8364;</td>
+                <!--<td>22,00 &#8364;</td>-->
             </tr>
 
             <tr>
                 <td>2 s&#233;ries de 10 minutes</td>
 
-                <td>28,00 &#8364;</td>
+                <td>31,00 &#8364;</td>
 
-                <td>35,00 &#8364;</td>
+                <td>39,00 &#8364;</td>
 
-                <td>46,00 &#8364;</td>
+                <td>-</td><!--<td>54,00 &#8364;</td>-->
 
-                <td>-</td>
+                <!--<td>-</td>-->
             </tr>
 
             <tr>
                 <td>12 s&#233;ries de 10 minutes</td>
 
-                <td>145,00 &#8364;</td>
+                <td>165,00 &#8364;</td>
 
-                <td>190,00 &#8364;</td>
-
-                <td>-</td>
+                <td>210,00 &#8364;</td>
 
                 <td>-</td>
+
+                <!--<td>-</td>-->
             </tr>
             </tbody>
         </table>
@@ -132,7 +132,7 @@
         <table class="table table-bordered table-condensed">
             <thead>
             <tr>
-                <th class="active" rowspan="2">Formules</th>
+                <th class="active" rowspan="2">Formules GP et<br>anniversaire</th>
                 <th class="active" colspan="2">GP 1</th>
                 <th class="active" colspan="2">GP 2</th>
                 <th class="active" colspan="2">GP 3</th>
@@ -140,11 +140,11 @@
             </tr>
             <tr>
                 <!-- td from rowspan -->
-                <th class="column">de 10 à 18 pers.</th>
+                <th class="column">de 8 à 18 pers.</th>
                 <th class="column">de 19 à 38 pers.</th>
-                <th class="column">de 10 à 18 pers.</th>
+                <th class="column">de 8 à 18 pers.</th>
                 <th class="column">de 19 à 38 pers.</th>
-                <th class="column">de 10 à 18 pers.</th>
+                <th class="column">de 8 à 18 pers.</th>
                 <th>de 19 à 38 pers.</th>
                 <!-- td from rowspan -->
             </tr>
@@ -153,16 +153,16 @@
             <tr>
                 <td>Tarifs</td>
 
-                <td>48,00 &#8364;/pers</td>
-                <td>45,00 &#8364;/pers</td>
+                <td>52,00 &#8364;/pers</td>
+                <td>49,00 &#8364;/pers</td>
 
-                <td>57,00 &#8364;/pers</td>
-                <td>54,00 &#8364;/pers</td>
-
-                <td>63,00 &#8364;/pers</td>
+                <td>62,00 &#8364;/pers</td>
                 <td>59,00 &#8364;/pers</td>
 
-                <td>30,00 &#8364;/enfant</td>
+                <td>69,00 &#8364;/pers</td>
+                <td>64,00 &#8364;/pers</td>
+
+                <td>33,00 &#8364;/enfant</td>
 
             </tr>
 
