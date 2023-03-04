@@ -114,11 +114,10 @@
         <br>
         La formule anniversaire comprend bien sûr du karting! : 2 sessions de  10 minutes de karting 160CC ainsi qu'un
         gâteau, des bonbons, des boissons, la remise des diplômes de pilote de karting pour chaque enfant sur le  podium
-         et une médaille pour la star de la journée! 30 &#8364;/enfant.
+         et une médaille pour la star de la journée! 33€/enfant.
     </p>
     <br>
-    <p>Pour un tarif de groupe de plus de 14 personnes, CE, accueil d'entreprise, EDV de jeune
-        fille ou garçon,
+    <p>Pour une demande chiffrée tel que : CE, accueil d'entreprise, EDV de jeune fille ou garçon,
         <a href="https://www.lockarting.fr/#contact"
            target="_blank">
             veuillez-nous faire une demande sur notre formulaire de contact.
@@ -140,11 +139,11 @@
             </tr>
             <tr>
                 <!-- td from rowspan -->
-                <th class="column">de 8 à 18 pers.</th>
+                <th class="column">de 10 à 18 pers.</th>
                 <th class="column">de 19 à 38 pers.</th>
-                <th class="column">de 8 à 18 pers.</th>
+                <th class="column">de 10 à 18 pers.</th>
                 <th class="column">de 19 à 38 pers.</th>
-                <th class="column">de 8 à 18 pers.</th>
+                <th class="column">de 10 à 18 pers.</th>
                 <th>de 19 à 38 pers.</th>
                 <!-- td from rowspan -->
             </tr>
