@@ -233,7 +233,7 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="icon-next"></span></a>
     </header>
 
-    <!-- Section Circuit -->
+    <!-- Section Circuit pour TEST OVH -->
     <section id="circuit">
         <div class="container">
             <div class="row">
