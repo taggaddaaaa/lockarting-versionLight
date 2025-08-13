@@ -1,0 +1,21 @@
+name: Deploy to OVH
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan ssh.cluster005.hosting.ovh.net >> ~/.ssh/known_hosts
+      - name: Deploy with rsync
+        run: |
+          rsync -avz --delete ./ lockartiiw-githubsab@ssh.cluster005.hosting.ovh.net:.
