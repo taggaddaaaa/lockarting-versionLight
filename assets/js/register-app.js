@@ -4,7 +4,7 @@
  * Date: 12/01/19
  * Time: 22:45 PM
  */
-$(function() {
+$(function () {
     $("#registerForm").submit(function (e) {
 
         let dataToSend = {
@@ -32,9 +32,9 @@ $(function() {
             contentType: 'application/json',
             success: function (data) {
                 buildAlert(successMessage, "success");
-                document.location.href="/index.php";
+                document.location.href = "/index.php";
             },
-            error: function(error) {
+            error: function (error) {
                 error = error.responseJSON;
                 let message = errorMessage;
 

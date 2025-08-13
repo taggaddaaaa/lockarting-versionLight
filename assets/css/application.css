@@ -1,7 +1,7 @@
 /*HEADER SECTION*/
 .title-app {
     font-weight: 700;
-    font-family: Roboto Slab,Times New Roman,serif;
+    font-family: Roboto Slab, Times New Roman, serif;
 }
 
 .badges .badge-link {
@@ -22,6 +22,7 @@
         display: inline-block;
         margin-bottom: 0;
     }
+
     .col-md-6 {
         flex: 0 0 50%;
         max-width: 50%;
@@ -47,7 +48,7 @@
 .features-4 h2.title {
     margin-bottom: 30px;
     font-weight: 700;
-    font-family: Roboto Slab,Times New Roman,serif;
+    font-family: Roboto Slab, Times New Roman, serif;
 }
 
 
@@ -76,10 +77,13 @@
     background-image: url("../img/iphone_6.png");
 }
 
-.device-mockup > .device > .screen {
+.device-mockup>.device>.screen {
     position: absolute;
     overflow: hidden;
-    top: 11.58%; bottom: 11.58%; left: 5.97%; right: 5.97%;
+    top: 11.58%;
+    bottom: 11.58%;
+    left: 5.97%;
+    right: 5.97%;
 }
 
 

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' />
-    <meta name="publisher" content="Sabine Caizergues"/>
-    <meta name="author" content="Sabine Caizergues"/>
+    <meta name="publisher" content="Sabine Caizergues" />
+    <meta name="author" content="Sabine Caizergues" />
 
     <title>Loc'karting - Protection de la vie privée</title>
 
@@ -23,35 +24,29 @@
 
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="Loc'karting - Circuit de karting de Pérols.">
-    <meta itemprop="description"
-          content="À partir de 7 ans, en famille, ou entre amis, Venez défier le chrono sur le circuit mythique de Pérols. Nous accueillons également les entreprises, les enterrement de vie de garçon ou fille."
-    >
+    <meta itemprop="description" content="À partir de 7 ans, en famille, ou entre amis, Venez défier le chrono sur le circuit mythique de Pérols. Nous accueillons également les entreprises, les enterrement de vie de garçon ou fille.">
     <meta itemprop="image" content="https://lockarting.fr/assets/img/og-image.jpg">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@lockarting">
     <meta name="twitter:title" content="Loc'karting - Circuit de karting de Pérols.">
-    <meta name="twitter:description"
-          content="À partir de 7 ans, en famille, ou entre amis, Venez défier le chrono sur le circuit mythique de Pérols. Nous accueillons également les entreprises, les enterrement de vie de garçon ou fille."
-    >
+    <meta name="twitter:description" content="À partir de 7 ans, en famille, ou entre amis, Venez défier le chrono sur le circuit mythique de Pérols. Nous accueillons également les entreprises, les enterrement de vie de garçon ou fille.">
     <meta name="twitter:creator" content="@taggaddaaaa">
     <meta name="twitter:image:src" content="https://lockarting.fr/assets/img/og-image.jpg">
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="Loc'karting - Circuit de karting de Pérols."/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://www.lockarting.fr"/>
+    <meta property="og:title" content="Loc'karting - Circuit de karting de Pérols." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.lockarting.fr" />
     <meta property="og:image:width" content="203">
     <meta property="og:image:height" content="203">
     <meta property="og:image" content="https://www.lockarting.fr/assets/img/og-image.jpg">
-    <meta property="og:description"
-          content="À partir de 7 ans, en famille, ou entre amis, Venez défier le chrono sur le circuit mythique de Pérols. Nous accueillons également les entreprises, les enterrement de vie de garçon ou fille."
-    />
-    <meta property="og:site_name" content="Loc'karting"/>
-    <meta property="og:locale" content="fr_FR"/>
-    <meta property="fb:admins" content="223079824501362"/>
-    <meta property="fb:app_id" content="188494268262133"/>
+    <meta property="og:description" content="À partir de 7 ans, en famille, ou entre amis, Venez défier le chrono sur le circuit mythique de Pérols. Nous accueillons également les entreprises, les enterrement de vie de garçon ou fille." />
+    <meta property="og:site_name" content="Loc'karting" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="fb:admins" content="223079824501362" />
+    <meta property="fb:app_id" content="188494268262133" />
 
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -76,7 +71,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131647880-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-131647880-1');
@@ -86,34 +84,34 @@
 
 <body class="off-canvas-sidebar">
 
-<?php include "partials/navbar.php" ?>
+    <?php include "partials/navbar.php" ?>
 
-<div id="register-bg" class="wrapper wrapper-full-page">
-    <div class="page-header register-page header-filter" filter-color="black">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 ml-auto mr-auto">
-                    <h1 class="card-title text-center text-white" style="margin-top: 25px;">Protection de la vie privée</h1>
-                    <div class="card card-signup">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-12 ml-auto mr-auto">
-                                    <!--TODO: FILL PRIVACY CONTENT-->
-                                    <p>En cours de rédaction...</p>
+    <div id="register-bg" class="wrapper wrapper-full-page">
+        <div class="page-header register-page header-filter" filter-color="black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ml-auto mr-auto">
+                        <h1 class="card-title text-center text-white" style="margin-top: 25px;">Protection de la vie privée</h1>
+                        <div class="card card-signup">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 ml-auto mr-auto">
+                                        <!--TODO: FILL PRIVACY CONTENT-->
+                                        <p>En cours de rédaction...</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <?php include "partials/messenger.php" ?>
+            <?php include "partials/footer.php" ?>
         </div>
-
-        <?php include "partials/messenger.php" ?>
-		<?php include "partials/footer.php" ?>
     </div>
-</div>
 
-<?php include "partials/scripts.php" ?>
+    <?php include "partials/scripts.php" ?>
 
 </body>
 

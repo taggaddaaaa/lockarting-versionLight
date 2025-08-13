@@ -1,5 +1,5 @@
 <?php
-switch($_SERVER["REDIRECT_STATUS"]){
+switch ($_SERVER["REDIRECT_STATUS"]) {
 	case 400:
 		$errorCode = "400";
 		$title = "Bad Request";
@@ -40,72 +40,76 @@ switch($_SERVER["REDIRECT_STATUS"]){
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' />
-    <meta name="publisher" content="Sabine Caizergues"/>
-    <meta name="author" content="Sabine Caizergues"/>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' />
+	<meta name="publisher" content="Sabine Caizergues" />
+	<meta name="author" content="Sabine Caizergues" />
 
-    <title>Loc'karting - Page d'erreur</title>
+	<title>Loc'karting - Page d'erreur</title>
 
-    <!-- Search Engine -->
-    <meta name="robots" content="nofollow">
+	<!-- Search Engine -->
+	<meta name="robots" content="nofollow">
 
-    <!--     Fonts and icons     -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="/assets/css/material-dashboard.min.css" />
-    <link rel="stylesheet" href="/assets/css/register.css" />
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="/assets/css/material-dashboard.min.css" />
+	<link rel="stylesheet" href="/assets/css/register.css" />
 
-    <!--logo dans la barre de navigation- optimisé par le site https://realfavicongenerator.net -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png?v=GvmAvN3YRN">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png?v=GvmAvN3YRN">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png?v=GvmAvN3YRN">
-    <link rel="manifest" href="/site.webmanifest?v=GvmAvN3YRN">
-    <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg?v=GvmAvN3YRN" color="#ffc40d">
-    <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico?v=GvmAvN3YRN">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--logo dans la barre de navigation- optimisé par le site https://realfavicongenerator.net -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png?v=GvmAvN3YRN">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png?v=GvmAvN3YRN">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png?v=GvmAvN3YRN">
+	<link rel="manifest" href="/site.webmanifest?v=GvmAvN3YRN">
+	<link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg?v=GvmAvN3YRN" color="#ffc40d">
+	<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico?v=GvmAvN3YRN">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131647880-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131647880-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-        gtag('config', 'UA-131647880-1');
-    </script>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-131647880-1');
+	</script>
 
 </head>
 
 <body class="off-canvas-sidebar">
 
-<?php include "partials/navbar.php" ?>
+	<?php include "partials/navbar.php" ?>
 
-<div class="wrapper wrapper-full-page">
-	<div class="page-header error-page header-filter" style="background-image: url('/assets/img/clint-mckoy.jpg');">
-		<!--   you can change the color of the filter page using: data-color="blue | green | orange | red | purple" -->
-		<div class="content-center">
-			<div class="row">
-				<div class="col-md-12">
-					<h1 style="margin-top: 0; margin-bottom: 0;" class="title"><?= $errorCode ?></h1>
-					<h3><?= $title ?></h3>
-					<h2>Ooooups! 😣 On dirait que vous êtes en panne!</h2>
-					<h5><?= $description ?></h5>
+	<div class="wrapper wrapper-full-page">
+		<div class="page-header error-page header-filter" style="background-image: url('/assets/img/clint-mckoy.jpg');">
+			<!--   you can change the color of the filter page using: data-color="blue | green | orange | red | purple" -->
+			<div class="content-center">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 style="margin-top: 0; margin-bottom: 0;" class="title"><?= $errorCode ?></h1>
+						<h3><?= $title ?></h3>
+						<h2>Ooooups! 😣 On dirait que vous êtes en panne!</h2>
+						<h5><?= $description ?></h5>
+					</div>
 				</div>
 			</div>
+
+			<?php include "partials/footer.php" ?>
 		</div>
+	</div>
 
-        <?php include "partials/footer.php" ?>
-    </div>
-</div>
-
-<?php include "partials/scripts.php" ?>
+	<?php include "partials/scripts.php" ?>
 
 </body>
 
