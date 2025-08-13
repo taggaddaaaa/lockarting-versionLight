@@ -239,7 +239,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Le Circuit</h2>
-                    <h3 class="section-subheading text-muted">BienvenuE sur le circuit mythique de Pérols</h3>
+                    <h3 class="section-subheading text-muted">Bienvenue sur le circuit mythique de Pérols.</h3>
                 </div>
             </div>
 

@@ -118,7 +118,7 @@
                                             SIRET :  <strong>52805443000020   </strong>R.C.S. :<strong> 528054430 RCS
                                                 Montpellier</strong><br />
                                             Numéro TVA intracommunautaire : <strong>FR42528054430</strong><br />
-                                            Adresse de courrier électronique : <strong><a href="mailto:lockarting-herault@orange.fr">lockarting-herault@orange.fr</a></strong> <br />
+                                            Adresse de courrier électronique : <strong><a href="mailto:contact@lockarting.fr">contact@lockarting.fr</a></strong> <br />
                                              <br />
                                             Le créateur du site est : <strong>Sabine Caizergues</strong><br />
                                             Le responsable de la  publication est : <strong>Sabine Caizergues</strong><br />
