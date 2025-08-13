@@ -18,4 +18,4 @@ jobs:
           ssh-keyscan ssh.cluster005.hosting.ovh.net >> ~/.ssh/known_hosts
       - name: Deploy with rsync
         run: |
-          rsync -avz --delete ./ lockartiiw-githubsab@ssh.cluster005.hosting.ovh.net:.
+          rsync -avz --delete ./ lockartiiw-githubsab@ssh.cluster005.hosting.ovh.net:/.
