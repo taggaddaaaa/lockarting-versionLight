@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 // Static file handling
 if (is_file($filePath)) {
     $extension = strtolower(pathinfo($filePath, PATHINFO_EXTENSION));
-
+    
     // Set appropriate content type
     $contentTypes = [
         'html' => 'text/html',
@@ -44,11 +44,11 @@ if (is_file($filePath)) {
         'gif' => 'image/gif',
         'svg' => 'image/svg+xml',
     ];
-
+    
     if (isset($contentTypes[$extension])) {
         header('Content-Type: ' . $contentTypes[$extension]);
     }
-
+    
     // Handle PHP files
     if ($extension === 'php') {
         try {
@@ -56,7 +56,7 @@ if (is_file($filePath)) {
             ob_start();
             include($filePath);
             $output = ob_get_clean();
-
+            
             // Add debug information if requested
             if (isset($_GET['debug'])) {
                 $debug = [
@@ -67,7 +67,7 @@ if (is_file($filePath)) {
                 ];
                 $output .= '\n<!-- Debug Info: ' . json_encode($debug) . ' -->';
             }
-
+            
             echo $output;
         } catch (Throwable $e) {
             http_response_code(500);
@@ -76,7 +76,7 @@ if (is_file($filePath)) {
         }
         exit();
     }
-
+    
     // Serve static files
     readfile($filePath);
     exit();
