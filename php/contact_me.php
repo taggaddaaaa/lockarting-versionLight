@@ -25,8 +25,8 @@ if (
 	 * 6: Creation of the message
 	 * 7: Sending the email
 	 */
-	$mail = 'contact@lockarting.fr'; // For lockarting
-	//	$mail .= ', sabinecaizergues@gmail.com'; // Add for debugging.
+	$mail = 'bonjour@lockarting.fr'; // For lockarting
+	//$mail .= ', sabinecaizergues@gmail.com'; // Add for debugging.
 
 	if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) {
 		$simple_passage_ligne = "\r\n";
